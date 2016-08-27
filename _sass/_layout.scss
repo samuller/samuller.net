@@ -129,6 +129,7 @@
     text-align: center;
     line-height: 2.5em;
     margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
 
     @include shadow-box;
 }
