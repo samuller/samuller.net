@@ -13,7 +13,7 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $background-image: url('../img/background.png');
-$background-color: #1f6d65;
+$background-color: #1f6d65; // rgb(31, 109, 101)
 $content-background: rgba(0, 0, 0, .5);
 
 $spacing-unit:     15px;
@@ -47,7 +47,7 @@ $on-laptop:        800px;
 }
 
 @mixin shadow-box {
-   	color: $text-color;
+   	// color: $text-color;
     background: $content-background; 
     background-clip: padding-box;
     border: 0px solid rgba(128, 128, 128, .5); /*8px*/
