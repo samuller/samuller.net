@@ -1,10 +1,31 @@
 ---
 layout: default
 ---
-<div style="text-align: center;"><a href="quotes.html?cat=6&amp;nr=49" style="float: left;">prev</a>1/49<a href="quotes.html?cat=6&amp;nr=2" style="float: right;">next</a></div>
-<blockquote>
-Please give us a simple answer, so that we don't have to think, because if we think, we might find answers that don't fit the way we want the world to be.
-<cite>Terry Pratchett </cite>
-</blockquote>
-<br/>
-<div class="notice"><a href="quotes.html?cat=1">politics</a></div>		
+
+<div id="inCase">
+  <blockquote>
+  You know that if it is not broken, it just does not have enough features...
+  </blockquote>
+  <br/>
+</div>
+
+{% raw %}
+<div id="quoteApp" v-cloak>
+  <div style="text-align: center;">
+    <a v-bind:href="'?cat=' + category + '&amp;nr=' + prevQuoteNr" style="float: left;">prev</a>
+    <span>{{ quoteNr }}</span>/<span>{{ categorySize }}</span>
+    <a v-bind:href="'?cat=' + category + '&amp;nr=' + nextQuoteNr" style="float: right;">next</a>
+  </div>
+  <blockquote>
+  <span v-html="currQuote.quote"></span>
+  <cite v-if="currQuote.source">{{ currQuote.source }}
+    <span v-if="currQuote.paraphrase"> [<a title="{{ currQuote.paraphrase }}" class="tooltip">paraphrased</a>]</span>
+  </cite>
+  </blockquote>
+  <br/>
+  <div class="notice"><a v-bind:href="'?cat=' + nextCategory" id="category">{{ category }}</a></div>
+</div>
+{% endraw %}
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="/js/quote.js"></script>
