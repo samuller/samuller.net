@@ -1,0 +1,58 @@
+quote	source	paraphrase
+A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.	Antoine de Saint-Exupery
+Software abstractions fail to abstract away the details when the underlying hardware fails, because they do not incorporate the fail states into the abstraction.
+Posted from a virtual machine within a virtual machine running my own Linux distro through Tor while sitting in a Faraday cage and wearing a tin foil hat.
+We do not make any express or implied representations, warranties or guarantees regarding the availability, accuracy, reliability, timeliness, quality or security of any services.
+"And, if you pick the wrong balance of security and convenience, it's self-defeating. Users will actively create loopholes to simplify their lives. For example, in apartment buildings where visitors have to be buzzed in, people may block the door from closing, or just routinely press the ""open"" button when the bell is rung, without checking."	Unknown, Ars Technica (comments)
+Caffeine underflow. Brain dumped.
+Farewell then XP. It is better to have loved and lost all of your data to a malicious virus, than to never have been able to create any data at all.
+If a system is to serve the creative spirit, it must be entirely comprehensible to a single individual.	Daniel H. H. Ingalls
+Security at the expense of usability, comes at the expense of security.
+Sure Java, Python, et al have their share of problems, but at least I can open a socket or a filehandle without doing market research on libraries first.
+Undescribable device of the year: It's like a thing, but without the LEDs.
+If I've got six months to build a system, then I'll spend six months building it. I'll also spend six months designing it, and another six months testing it. The good news is that it's the same six months.	Ron Jeffries
+We've heard that a million monkeys at a million keyboards could produce the complete works of Shakespeare; now, thanks to the Internet, we know that is not true.	Robert Wilensky
+I work for Microsoft, they call me code monkey... well just monkey.
+"The rule of thumb I've always used is the one I learned a long time ago from a CS professor: ""To effectively work at a level of abstraction N, you must have a working knowledge of level N-1, and an understanding of the principles of N-2."""
+When you try to unify two opposing forces by creating a third alternative, you just end up with three opposing forces. You haven't unified anything and you haven't really fixed anything.	Joel Spolsky
+I don't understand how it's possible to both use more than 10,000 lines of high level code, and solve a problem in the same program.
+VIM is the one true editor you pagan!
+First they have forbidden typecasts, then they have abolished true pointers, now everyone is coding in Java...
+Now at an Internet near you!
+By filing this bug report you have challenged the honour of my family. Prepare to die!
+It said to install Windows 2000 or better, so I installed Linux instead.
+Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.	Brian W. Kernighan
+If you invent an idiot-proof computer... they will invent a better idiot!
+When doing rapid prototyping with a client who has no idea what's involved [in software development], make sure that early stage software looks like early stage software. If a client sees a button, they assume it is fully functional. It was a good lesson for me to learn. If it isn't done, the client shouldn't see it.	Joel Spolsky
+He who sacrifices functionality for ease of use, loses both and deserves neither.	Slashdotter
+There are two ways of constructing a software design. One way is to make it so simple that there are obviously no deficiencies. And the other way is to make it so complicated that there are no obvious deficiencies.
+If debugging is the process of removing bugs, then programming  must be the process of putting them in.	Edsger W. Dijkstra
+The only thing more dangerous than a hardware guy with a code patch is a programmer with a soldering iron.
+int getRandomNumber() { <br/>return 4; // chosen by fair dice roll, guaranteed to be random.<br/> }
+The two basic principles of Windows system administration: for minor problems, reboot; for major problems, reinstall.
+Q: Are you going to turn the episodes in to mp3s and host them? <br/>A: At the moment, no. They'd end up being about 300mb, and that would murder my ISP who in turn would murder me, because he knows where I live. His name is Matt.
+"The venerable master Qc Na was walking with his student, Anton. Hoping to prompt the master into a discussion, Anton said ""Master, I have heard that objects are a very good thing - is this true?"" Qc Na looked pityingly at his student and replied, ""Foolish pupil - objects are merely a poor man's closures.""<br/> Chastised, Anton took his leave from his master and returned to his cell, intent on studying closures. He carefully read the entire ""Lambda: The Ultimate..."" series of papers and its cousins, and implemented a small Scheme interpreter with a closure-based object system. He learned much, and looked forward to informing his master of his progress.<br/> On his next walk with Qc Na, Anton attempted to impress his master by saying ""Master, I have diligently studied the matter, and now understand that objects are truly a poor man's closures."" Qc Na responded by hitting Anton with his stick, saying ""When will you learn? Closures are a poor man's object."" At that moment, Anton became enlightened."
+The [AACS] design prevents legitimate purchasers from playing legitimately purchased content on legitimately purchased machines, and fails to prevent people from ripping the content and sharing it through bittorrent. The DRM people wanted something that could not be done, so unsurprisingly they winded up buying something that does not do it.	James Donald
+"You forgot to mention how easy it is to update it! Simply go to the source repository, select your build and mirror location, download the source, open a terminal window, type ""dot slash configure,"" (which, by the way is impossibly easy to explain in verbal or typed form), then type make, then type make install. It couldn't be easier!"
+throws NuclearCoreMeltdownException
+This is classic Microsoft strategy - embrace, extend, extinguish.
+Perl as a language has less a design than a thousand special features flying in close formation.
+Everyone's first vi session:<br/>^C^C^X^X^X^XquitqQ!qdammit[esc]qwertyuiopasdfghjkl;:xwhat 
+Software is fundamentally incapable of most of the mental capabilities of humans which separate them from mere mechanisms: qualities such as adaptability, general-purpose knowledge, a sense of conceptual and functional context, and common sense.
+Sometimes I type with my elbows when my hands are tired. It's just as fast.	Steve Yegge (describing different possible levels of progamming skill)
+C made my head hurt. Java is like sweet, sweet aspirin.	Steve Yegge (describing different possible levels of progamming skill)
+People learn a lot through failure and pain. C is clearly the perfect choice when you look at it this way.
+You can have programs written fast, well, and cheap, but you only get to pick 2...
+Most people are more afraid of their computer than they are interested in it's performance.
+Failure is not an option. It comes bundled with your software.
+You know that if it is not broken, it just does not have enough features...
+No keyboard detected. Press F1 to continue
+"I had two options: incremental parsing, or asynchrous parsing. Clearly, since I'm a badass programmer who can't recognize my own incompetence, I chose to do incremental parsing. I mentioned this plan a few months ago to Brendan Eich, who said: ""Let me know how the incremental parsing goes."" Brendan is an amazingly polite guy, so at the time I didn't realize this was a code-phrase for: ""Let me know when you give up on it, loser."""	Steve Yegge
+Andy giveth, and Bill taketh away. (Andy refers to Andrew Stephen Grove of Intel, Bill to Bill Gates of Microsoft)
+What does your robot do? It collects data about the surrounding environment, then discards it and drives into walls.
+...and Microsoft was clamping down on requirements with the usual subtlety of a convicted monopolist.
+Some languages are designed to solve a problem. Others are designed to prove a point.
+Two jobs ago, I had to build something to share data with a partner company. I had no prior knowledge of the chosen product. In 6-40 hour weeks, I learned, configured, administered, coded, debugged, documented and deployed it. It worked. It is still in use. <br/><br/> One job ago, they asked me to do the exact same project. I estimated 6 man weeks. The management assigned me support teams from the following departments: project management, dba, sa, network, security, external data approval, legal, hardware selection, capacity planning, middleware management, product management, application development, timekeeping and vendor management, for a total of more than 35 people at any given time. There were 3 mandatory weekly meetings where everyone involved had to attend. The first was to discuss the plan for the second meeting. The second was to discuss the project plan. The third was to review the  project plan and assign work for the week. After a year of this, I was laid off (gratefully I might add). It's now 6 months later and I've been told that the project has barely moved forward since I left (ya think?).
+Regardless of the application in question, if run time speed is the primary driver then...<br/>(a) profile it<br/>(b) optimize the algorithms<br/>(c) code it in assembler<br/>(d) jmp (a)
+I find that weeks of coding and testing can save me hours of planning.
+while(!sleep) { sheep++ };
