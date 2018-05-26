@@ -357,3 +357,12 @@ input[disabled].button, input[disabled].button:hover {
 p.container {
     margin: 16px 0px;
 }
+
+a.tooltip, a.tooltip:hover {
+	display: inline;
+	position: relative;
+	text-decoration: none;
+	font-weight: bold; 
+	color: currentColor;
+}
+
