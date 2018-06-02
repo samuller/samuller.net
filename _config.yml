@@ -20,7 +20,7 @@ github_username:  jekyll
 repository: samuller/samuller.github.io
 
 nav_links: [
-  {'title': 'Home', 'url': '/home/'},
+  {'title': 'Home', 'url': '/'},
   {'title': 'Quotes', 'url': '/quotes/'},
   {'title': 'Contact', 'url': '/contact/'}
 ]
