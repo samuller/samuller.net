@@ -19,7 +19,7 @@ layout: default
   <blockquote>
   <span v-html="currQuote.quote"></span>
   <cite v-if="currQuote.source">{{ currQuote.source }}
-    <span v-if="currQuote.paraphrase"> [<a title="{{ currQuote.paraphrase }}" class="tooltip">paraphrased</a>]</span>
+    <span v-if="currQuote.paraphrase"> [<a v-bind:title="currQuote.paraphrase" class="tooltip">paraphrased</a>]</span>
   </cite>
   </blockquote>
   <br/>
