@@ -59,3 +59,25 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+
+/* Use Monokai theme for syntax highlighting */
+@import "monokai";
+/* Set background color for inline code */
+code {
+    /* Use lighter version of Monakai's background colour*/
+    background-color: lighten(#272822, 10%);
+    border-color: #303030;
+    color: #c0c0c0;
+}
+/**
+* Set background for code blocks to be different from inline code.
+* We set no color so that Monokai's .highlight color is visible.
+*/
+pre, pre code {
+    background-color: transparent;
+    overflow-x: auto;
+}
+.highlighter-rouge .highlight {
+    background-color: unset;
+}
