@@ -25,6 +25,8 @@ nav_links: [
   {'title': 'About', 'url': '/about/'}
 ]
 
+google_analytics: UA-120258429-1
+
 # Build settings
 markdown: kramdown
 exclude:
