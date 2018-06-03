@@ -27,3 +27,7 @@ nav_links: [
 
 # Build settings
 markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
