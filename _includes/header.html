@@ -15,11 +15,12 @@
         </svg>
       </a>
 
+      {% assign page_url_nav = page.url | split: "/" | slice: 1 | first | prepend: "/" | append: "/" %}
       <div class="trigger">
         {% for nav_page in site.nav_links %}
           {% if nav_page.title %}
             {% assign style = "page-link" %}
-            {% if page.url == nav_page.url %}
+            {% if page_url_nav == nav_page.url %}
               {% assign style = "page-link active" %}
             {% endif %}
             <a class="{{ style }}" href="{{ nav_page.url | prepend: site.baseurl }}">{{ nav_page.title }}</a>
