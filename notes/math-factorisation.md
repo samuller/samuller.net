@@ -5,9 +5,15 @@ categories: math
 header: mathematics
 ---
 
+## Terminology
+
 Factorisation: $ab + ac \to a(b + c)$
 
 Expansion: $a(b + c) \to ab + ac$
+
+Polynomial: $a_nx^n + a_{n-1}x^{n-1} + ... + a_2x^2 + a_1x + a_0$
+
+## Formulas
 
 $a(c + d) + b(c + d) = (a + b)(c + d)$
 
