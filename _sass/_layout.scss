@@ -272,6 +272,7 @@
     h3 {
         font-size: 1.05em;
         margin-bottom: 0.5em;
+        text-decoration: underline;
 
         @include media-query($on-laptop) {
             font-size: 22px;
