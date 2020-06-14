@@ -360,11 +360,11 @@ p.container {
 }
 
 // Spacing below paragraphs and lists
-p,ul {
+p,ul,ol {
     margin-bottom: 16px;
 }
 // Unless they follow each other
-p + ul {
+p + ul,p + ol {
 	margin-top: -16px;
 }
 
