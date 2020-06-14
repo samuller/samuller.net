@@ -2,6 +2,7 @@
 
   <div class="wrapper">
 
+    {% assign site_section = page.url | split: "/" | slice: 1 | first %}
     <div class="site-title">
     <a class="nolink" href="{{ site.baseurl }}/">{{ site.title }}</a>
     </div>
@@ -15,12 +16,12 @@
         </svg>
       </a>
 
-      {% assign page_url_nav = page.url | split: "/" | slice: 1 | first | prepend: "/" | append: "/" %}
+      {% assign site_section_url = site_section | prepend: "/" | append: "/" | replace: "//", "/" %}
       <div class="trigger">
         {% for nav_page in site.nav_links %}
           {% if nav_page.title %}
             {% assign style = "page-link" %}
-            {% if page_url_nav == nav_page.url %}
+            {% if site_section_url == nav_page.url %}
               {% assign style = "page-link active" %}
             {% endif %}
             <a class="{{ style }}" href="{{ nav_page.url | prepend: site.baseurl }}">{{ nav_page.title }}</a>
