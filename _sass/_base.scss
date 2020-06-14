@@ -376,4 +376,23 @@ a.tooltip, a.tooltip:hover {
 	color: currentColor;
 }
 
+// https://stackoverflow.com/questions/2597694/why-tr-not-taking-style
+table {
+    border-collapse: collapse;
+    margin-bottom: 8px;
+}
+
+thead tr {
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+
+tbody tr {
+    border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+}
+
+th, td {
+    padding: 0 10px;
+}
+
+// Vue
 [v-cloak] { display: none; }
