@@ -263,7 +263,8 @@ a.nolink {
 	color: currentColor;
 }
 
-.section-title, h1, h2 {
+// Set transparent background on headers
+.section-title, h1 {
 	background: rgba(26, 26, 26, 0.5);
 	border-left: 4px solid #888888;
 	color: #ddd;
