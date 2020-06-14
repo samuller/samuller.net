@@ -358,8 +358,13 @@ p.container {
     margin: 16px 0px;
 }
 
-p {
+// Spacing below paragraphs and lists
+p,ul {
     margin-bottom: 16px;
+}
+// Unless they follow each other
+p + ul {
+	margin-top: -16px;
 }
 
 a.tooltip, a.tooltip:hover {
