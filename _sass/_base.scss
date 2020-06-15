@@ -299,7 +299,9 @@ input, textarea {
 	border:1px solid rgba(0, 0, 0, 0);
 	padding:5px;
 	font-family: inherit;
-  font-size: inherit;
+    font-size: inherit;
+    // Remove browser border on focus
+    outline: none;
 }
 
 .leave {
