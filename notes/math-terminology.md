@@ -5,6 +5,8 @@ categories: math
 header: mathematics
 ---
 
+PEMDAS: Parentheses / Exponentiation / Multiplication and Division / Addition and Subtraction 
+
 $\ a + b = c$
 
 - Terms: $a$ and $b$

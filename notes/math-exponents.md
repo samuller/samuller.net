@@ -5,6 +5,10 @@ categories: math
 header: mathematics
 ---
 
+$0^n = 0 \qquad \\{n \neq 0\\}$
+
+$a^0 = 1 \qquad \\{a \in \mathbb{R}\\}$
+
 $a^m \times a^n = a^{m+n} \qquad \\{m, n \in \mathbb{Q}\\}$
 
 $a^m \div a^n = a^{m-n} \qquad \\{a \neq 0\\}$
