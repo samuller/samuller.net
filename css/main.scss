@@ -70,6 +70,12 @@ html[data-theme="white"] {
     border: 0px solid rgba(128, 128, 128, .5); /*8px*/
 }
 
+@media print {    
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",

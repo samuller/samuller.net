@@ -8,7 +8,7 @@
     {{ page.header | capitalize }}
     {% else %}
     <a class="nolink" href="{{ site.baseurl }}/">{{ site.title }}</a>
-    {% endif %}    
+    {% endif %}
     </div>
 
     <nav class="site-nav">
@@ -21,7 +21,7 @@
       </a>
 
       {% assign site_section_url = site_section | prepend: "/" | append: "/" | replace: "//", "/" %}
-      <div class="trigger">
+      <div class="trigger no-print">
         {% for nav_page in site.nav_links %}
           {% if nav_page.title %}
             {% assign style = "page-link" %}
