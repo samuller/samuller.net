@@ -33,8 +33,10 @@ $on-laptop:        800px;
 
 html {
     --content-background: rgba(0, 0, 0, .5);
-    // Doesn't work with Ruby SASS - need to update
-    // --background-image: url('../img/background.png');
+    // unquote() hack needed because Ruby SASS has bug parsing variables that use url()
+    // #{} needed for CSS variables?
+    // https://stackoverflow.com/questions/25136523/ignore-parts-of-sass-file-for-parsing
+    --background-image: #{unquote("url('../img/background.png')")};
     --background-color: #1f6d65; // rgb(31, 109, 101)
     --text-color-rgb: 204,204,204;
     --site-title-color: white;
@@ -50,7 +52,7 @@ html[data-theme="dark"] {
 }
 html[data-theme="white"] {
     --content-background: white; // rgba(246, 246, 239, 0.7);
-    // --background-image: none;
+    --background-image: none;
     --background-color: white;
     --text-color-rgb: 0,0,0;
     --site-title-color: black;
