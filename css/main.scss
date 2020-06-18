@@ -7,11 +7,6 @@
 // Setup variables to be used by imports
 //
 
-// modes:
-// - darker: rgba(0, 0, 0, .65)
-// - light: rgba(246,246,239,0.3)  (Hackernews gray)
-//   text, underline, background, title-text
-
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -24,7 +19,7 @@ $background-color: #1f6d65; // rgb(31, 109, 101)
 
 $spacing-unit:     15px;
 
-$text-color:       #ccc;
+
 $brand-color:      rgb(45, 175, 200);
 
 $grey-color:       #828282;
@@ -39,9 +34,20 @@ $on-laptop:        800px;
 
 html {
     --content-background: rgba(0, 0, 0, .5);
+    // Doesn't work with Ruby SASS - need to update
+    // --background-image: url('../img/background.png');
+    --text-color-rgb: 204,204,204;
 }
+// text, underline, background, title-text
 html[data-theme="dark"] {
     --content-background: rgba(0, 0, 0, .65);
+    // --background-image: url('../img/background.png');
+    --text-color-rgb: 204,204,204;
+}
+html[data-theme="white"] {
+    --content-background: rgba(246, 246, 239, 0.7);
+    // --background-image: none;
+    --text-color-rgb: 0,0,0;
 }
 
 // Use media queries like this:
@@ -58,7 +64,7 @@ html[data-theme="dark"] {
 }
 
 @mixin shadow-box {
-   	// color: $text-color;
+   	// color: rgb(var(--text-color-rgb));
     background: var(--content-background);
     background-clip: padding-box;
     border: 0px solid rgba(128, 128, 128, .5); /*8px*/

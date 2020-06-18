@@ -22,9 +22,10 @@ dl, dd, ol, ul, figure {
  */
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
+    color: rgb(var(--text-color-rgb));
 
     border-top: 4px solid #000;
+    // background: var(--background-image);
     background: $background-image;
   	background-size: cover;
     background-repeat: no-repeat;
