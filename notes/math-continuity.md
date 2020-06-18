@@ -47,4 +47,3 @@ _If a function is continuous on an interval for $x$, then you can take any $y$ v
 If $f$ is continuous on the closed interval $[a,b]$ then there exists $c,d \in [a,b]$ such that $f(c)$ is an absolute maximum and $f(d)$ is an absolute minimum.
 
 _If a function is continuous over an interval, then it has an absolute min and max in that interval._
-
