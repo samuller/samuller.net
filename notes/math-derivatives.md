@@ -57,6 +57,8 @@ $\displaystyle \frac{d}{dx}a^x = a^x\cdot \ln a$
 
 $\displaystyle \frac{d}{dx}\log_ax = \frac{1}{x\cdot\ln a}$
 
+$\displaystyle \frac{d}{dx}x^x = x^x(1 + \ln x)$
+
 $\displaystyle \frac{d}{dx}\sin x = \cos x$
 
 $\displaystyle \frac{d}{dx}\cos x = -\sin x$
@@ -75,11 +77,11 @@ $\displaystyle \frac{d}{dx}\arccos x = \frac{-1}{\sqrt{1-x^2}}$
 
 $\displaystyle \frac{d}{dx}\arctan x = \frac{1}{1+x^2}$
 
-$\displaystyle \frac{d}{dx}\mathrm{arccot} x = \frac{-1}{1+x^2}$
+$\displaystyle \frac{d}{dx}\mathrm{arccot}\ x = \frac{-1}{1+x^2}$
 
-$\displaystyle \frac{d}{dx}\mathrm{arcsec} x = \frac{1}{\|x\|\sqrt{x^2-1}}$
+$\displaystyle \frac{d}{dx}\mathrm{arcsec}\ x = \frac{1}{\|x\|\sqrt{x^2-1}}$
 
-$\displaystyle \frac{d}{dx}\mathrm{arccosecant} x = \frac{-1}{\|x\|\sqrt{x^2-1}}$
+$\displaystyle \frac{d}{dx}\mathrm{arccosecant}\ x = \frac{-1}{\|x\|\sqrt{x^2-1}}$
 
 ## Implicit differentiation
 
@@ -103,4 +105,4 @@ I.e. if a function is continuous and differentiable on an interval, then there i
 
 If a function $f$ is continuous on $[a,b]$, differentiable on $(a,b)$ and $f(a) = f(b)$, then there exists a $c \in [a,b]$ such that $f'(c) = 0$.
 
-This is just a special case of the Mean value theorem where the endpoints have the same heights and the mean gradient is thus 0.
+_This is just a special case of the Mean value theorem where the endpoints have the same heights and the mean gradient is thus 0._
