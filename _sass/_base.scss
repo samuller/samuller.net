@@ -30,7 +30,7 @@ body {
   	background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: $background-color;
+    background-color: var(--background-color);
     
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
@@ -266,9 +266,9 @@ a.nolink {
 
 // Set transparent background on headers
 .section-title, h1 {
-	background: rgba(26, 26, 26, 0.5);
+	background: var(--section-bg-color);
 	border-left: 4px solid #888888;
-	color: #ddd;
+	color: var(--section-title-color);
 	font-size: 1.4em; 
 	font-weight: 400;
 
