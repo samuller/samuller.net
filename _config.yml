@@ -19,6 +19,7 @@ repository: ""
 nav_links: [
   {'title': 'Home', 'url': '/'},
   {'title': 'Quotes', 'url': '/quotes/'},
+  {'title': 'Notes', 'url': '/notes/'},
   {'title': 'About', 'url': '/about/'}
 ]
 
