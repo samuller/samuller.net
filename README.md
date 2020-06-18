@@ -1,9 +1,8 @@
 ## Install
-Install Ruby 2.0+:
+Install Ruby 2.5+:
 
-    sudo apt-add-repository ppa:brightbox/ruby-
-    sudo apt-get update
-    sudo apt-get install ruby2.3 ruby2.3-dev
+    sudo apt-get install ruby ruby-dev
+    ruby -v
 
 Install bundler:
     
