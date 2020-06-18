@@ -397,9 +397,13 @@ th, td {
     padding: 0 10px;
 }
 
-.mini-menu {
+.theme-switcher {
     cursor: pointer;
 }
+
+.theme-switcher:hover {
+    background:rgba(25, 25, 25, 1);
+}    
 
 // Vue
 [v-cloak] { display: none; }
