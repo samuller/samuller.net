@@ -24,8 +24,8 @@ $\ a \times b = a\cdot b = ab = c$
 
 $\ a \div b = a / b =  \frac{a}{b} = c$ remainder $d$
 
-- Dividend: $a$
-- Divisor: $b$
+- Dividend/numerator: $a$
+- Divisor/denominator: $b$
 - Quotient: $c$
 - Remainder: $d$
 
