@@ -404,7 +404,11 @@ th, td {
 .theme-switcher:hover {
     color: white;
     background:rgba(25, 25, 25, 1);
-}    
+}
+
+.non-prose {
+    text-align: left;
+}
 
 // Vue
 [v-cloak] { display: none; }
