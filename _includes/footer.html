@@ -3,7 +3,10 @@
   <div class="wrapper">
     <div style="display: flex">
       <span>&emsp;&emsp;</span>
-    <span style="flex: 1">Copyright &copy; 2014 - {{ site.time | date: '%Y' }} <a href="/">Simon Müller</a></span>
+    <span style="flex: 1">
+      Copyright &copy; 2014 - <span title="{{ site.time }}">{{ site.time | date: '%Y' }}</span>
+      <a href="/">Simon Müller</a>
+    </span>
     <span class="theme-switcher button" onclick="switchTheme()">&emsp;⋮&emsp;</span>
     </div>
   </div>
