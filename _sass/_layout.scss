@@ -98,7 +98,7 @@
                 height: 15px;
 
                 path {
-                    fill: white;
+                    fill: var(--site-title-color);
                 }
             }
         }
@@ -114,11 +114,12 @@
         }
 
         a:hover {
+            color: var(--site-title-color);
             background-color: rgba(0, 0, 0, 0);
         }
 
         .page-link {
-            color: white;
+            color: var(--site-title-color);
             display: block;
             padding: 5px 10px;
 
