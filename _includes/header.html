@@ -6,6 +6,7 @@
     <div class="site-title">
     {% if page.header %}
     {{ page.header | capitalize }}
+    <div class="sub-title only-print">{{ page.title }}</div>
     {% else %}
     <a class="nolink" href="{{ site.baseurl }}/">{{ site.title }}</a>
     {% endif %}

@@ -42,6 +42,8 @@ html {
     --site-title-color: white;
     --section-title-color: #ddd;
     --section-bg-color: rgba(26, 26, 26, 0.5);
+    // --a-text-decoration: none;
+    // --section-text-decoration: none;
 }
 // text, underline, background, title-text
 html[data-theme="dark"] {
@@ -59,6 +61,8 @@ html[data-theme="white"] {
     --section-title-color: black;
     --section-bg-color: rgba(156, 156, 156, 0.5);
     // --image-filter: grayscale(50%);
+    // --a-text-decoration: underline;
+    // --section-text-decoration: underline;
 }
 
 // Use media queries like this:
@@ -83,6 +87,12 @@ html[data-theme="white"] {
 
 @media print {    
     .no-print, .no-print * {
+        display: none !important;
+    }
+}
+
+@media screen {    
+    .only-print, .only-print * {
         display: none !important;
     }
 }
