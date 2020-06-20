@@ -97,6 +97,11 @@ html[data-theme="white"] {
     }
 }
 
+.svg-center-overlay {
+    text-align: center;
+    position: absolute
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",

@@ -110,8 +110,20 @@ The determinant for any triangular matrix is just the product of the elements on
 
 ### Rule of Sarrus
 
-The "Rule of Sarrus" is a method to remember the determinant of a $3\times3$ matrix. Write down the matrix's entries twice next to each other. Multiply the elements in each 3-length diagonal with each other. Add diagonals that move from top-left to bottom-right and subtract diagonal that move from top-right to bottom-left.
+The "Rule of Sarrus" is a method to remember the determinant of a $3\times3$ matrix. Write down the matrix's entries twice next to each other. Multiply the elements in each 3-length diagonal with each other. Diagonals that move from top-left to bottom-right should be added and diagonals that move from top-right to bottom-left should be subtracted.
 
+<div class="svg-center-overlay">
+<svg height="210" width="740">
+    <!-- w=740, w/2=370, h=+30 -->
+    <line x1="245" y1="0" x2="360" y2="75" style="stroke:rgb(var(--text-color-rgb));stroke-width:2" />
+    <line x1="292" y1="0" x2="407" y2="75" style="stroke:rgb(var(--text-color-rgb));stroke-width:2" />
+    <line x1="339" y1="0" x2="454" y2="75" style="stroke:rgb(var(--text-color-rgb));stroke-width:2" />
+    <line x1="400" y1="0" x2="290" y2="75" style="stroke:rgb(var(--text-color-rgb));stroke-width:2" />
+    <line x1="443" y1="0" x2="333" y2="75" style="stroke:rgb(var(--text-color-rgb));stroke-width:2" />
+    <line x1="486" y1="0" x2="376" y2="75" style="stroke:rgb(var(--text-color-rgb));stroke-width:2" />
+</svg>
+</div>
+<div>
 $$
 \begin{matrix}
 a_{11} & a_{12} & a_{13} & a_{11} & a_{12} & a_{13}\\
@@ -119,6 +131,7 @@ a_{21} & a_{22} & a_{23} & a_{21} & a_{22} & a_{23}\\
 a_{31} & a_{32} & a_{33} & a_{31} & a_{32} & a_{33}\\
 \end{matrix}
 $$
+</div>
 
 <!--
 $$
