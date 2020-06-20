@@ -61,33 +61,44 @@ Cofactors are generally necessary to calculate a few properties of matrices, but
 
 The determinant is a numerical value that can only be calculated for square matrices. The notation for the determinant is $\operatorname{det}\mathbf{A}$ or $\|\mathbf{A}\|$. The determinant has an order of $n$ if $\mathbf{A}$ has a dimension of $n\times n$. The determinant for lower orders as follows:
 
-For $\mathbf{A}\_{1\times1} = [a\_{11}]$ the $\operatorname{det}\mathbf{A} = \|a\_{11}\|=a\_{11}$
+For $\mathbf{A}_{1\times1} = [a\_{11}]$ the $\operatorname{det}\mathbf{A} = \|a\_{11}\|=a\_{11}$
 
-For $\mathbf{A}\_{2\times2} =
+For
+$$
+\mathbf{A}_{2\times2} =
 \begin{bmatrix}
-a\_{11} & a\_{12}\\
-a\_{21} & a\_{22}\\
+a_{11} & a_{12}\\
+a_{21} & a_{22}\\
 \end{bmatrix}
-$ the $\operatorname{det}\mathbf{A} = \begin{vmatrix}
-a\_{11} & a\_{12}\\
-a\_{21} & a\_{22}\\
-\end{vmatrix}= a\_{11}\cdot a\_{22}-a\_{12}\cdot a\_{21}$
+$$ the
+$$
+\operatorname{det}\mathbf{A} = \begin{vmatrix}
+a_{11} & a_{12}\\
+a_{21} & a_{22}\\
+\end{vmatrix}= a_{11}\cdot a_{22}-a_{12}\cdot a_{21}
+$$
 
-For $\mathbf{A}\_{3\times3} =
+For
+$$
+\mathbf{A}_{3\times3} =
 \begin{bmatrix}
-a\_{11} & a\_{12} & a\_{13}\\
-a\_{21} & a\_{22} & a\_{23}\\
-a\_{31} & a\_{32} & a\_{33}\\
+a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}\\
 \end{bmatrix}
-$ the $\operatorname{det}\mathbf{A} = \begin{vmatrix}
-a\_{11} & a\_{12} & a\_{13}\\
-a\_{21} & a\_{22} & a\_{23}\\
-a\_{31} & a\_{32} & a\_{33}\\
-\end{vmatrix}$\\
+$$ the
+$$
+\operatorname{det}\mathbf{A} = \begin{vmatrix}
+a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}\\
+\end{vmatrix}
+$$
+
 $$
 \begin{align}
-=&\quad\ (a\_{11}\cdot a\_{22}\cdot a\_{33}) + (a\_{12}\cdot a\_{23}\cdot a\_{31}) + (a\_{13}\cdot a\_{21}\cdot a\_{32})\\
-& - (a\_{11}\cdot a\_{23}\cdot a\_{32})-(a\_{12}\cdot a\_{21}\cdot a\_{33})-(a\_{13}\cdot a\_{22}\cdot a\_{31})
+=&\quad\ (a_{11}\cdot a_{22}\cdot a_{33}) + (a_{12}\cdot a_{23}\cdot a_{31}) + (a_{13}\cdot a_{21}\cdot a_{32})\\
+& - (a_{11}\cdot a_{23}\cdot a_{32}) - (a_{12}\cdot a_{21}\cdot a_{33}) - (a_{13}\cdot a_{22}\cdot a_{31})
 \end{align}
 $$
 
