@@ -8,13 +8,15 @@ header: mathematics
 These graphs are all specified as functions on the cartesian coordinate system. Since functions only have one output value for each input, these cases exclude implicit functions or more canonical forms.
 
 <!--
+Inverse
+
 $x$ is the independent variable
 $y$ is the dependent variable
 -->
 
 ## Straight line
 
-![straight line graph](/img/math/x+1.svg){: height="35%" width="35%" class="float-right hover-highlight"}
+![graph of x+1](/img/math/x+1.svg){: height="35%" width="35%" class="float-right hover-highlight"}
 
 Equation:
 
@@ -31,7 +33,7 @@ Properties:
 
 ## Parabola
 
-![parabola graph](/img/math/-x^2 + 3.svg){: height="35%" width="35%" class="float-right hover-highlight"}
+![graph of -x^2 + 3](/img/math/-x^2 + 3.svg){: height="35%" width="35%" class="float-right hover-highlight"}
 
 Equation:
 
@@ -60,7 +62,7 @@ Properties:
 
 ## Hyperbola
 
-![hyperbola graph](/img/math/xy=1.svg){: height="35%" width="35%" class="float-right hover-highlight"}
+![graph of xy=1](/img/math/xy=1.svg){: height="35%" width="35%" class="float-right hover-highlight"}
 
 Equation:
 
@@ -78,3 +80,57 @@ Properties:
 - Vertices are at $(\sqrt{k}, \sqrt{k})$ and $(-\sqrt{k}, -\sqrt{k})$
 - The major axis crosses the hyperbola at its vertices
 - Asymptotes along the $x$ and $y$ axes
+
+## Absolute value
+
+![graph of abs(x)](/img/math/abs(x).svg){: height="35%" width="35%" class="float-right hover-highlight"}
+
+Equation:
+
+$$y = \left|f(x)\right|$$
+
+Example graph shows $y = \|x\|$.
+
+Properties:
+
+- No negative $y$ values
+- Graph has a symmetry axis at $x = 0$ such that the negative $x$ values reflect the positive $x$ values
+
+## Exponential
+
+![graph of e^x](/img/math/e^x.svg){: height="35%" width="35%" class="float-right hover-highlight"}
+
+Equation:
+
+$$y = a^x$$
+
+Interpretation of constants:
+
+- $a$: direction of growth
+  - $0 < \|a\| < 1$: grows as $x$ increases
+  - $1 \geq \|a\|$: shrinks as $x$ increases
+
+Properties:
+
+- $y$-intercept is always at 1 since $a^0 = 1$
+- Asymptote at $y = 0$
+
+## Logarithm
+
+![graph of ln(x)](/img/math/ln(x).svg){: height="35%" width="35%" class="float-right hover-highlight"}
+
+Equation:
+
+$$y = \log_ax$$
+
+Interpretation of constants:
+
+- $a$: direction of growth
+  - $0 < \|a\| < 1$: grows as $x$ increases
+  - $1 \geq \|a\|$: grows negative as $x$ increases
+
+Properties:
+
+- Inverse of the exponential graph
+- $x$-intercept is always at 1 since $a^0 = 1$
+- Asymptote at $x = 0$
