@@ -73,7 +73,7 @@ Turn quadratic equation into the algebraic identity
 
 $$x^2 + 2hx + h^2 = (x+h)^2$$
 
-by starting with a quadratic equation in standard form, ax^2 + bx + c = 0:
+by starting with a quadratic equation in standard form, $ax^2 + bx + c = 0$:
 
 1. Divide each side by $a$, the coefficient of the squared term.
 2. Subtract the constant $c/a$ from both sides.
