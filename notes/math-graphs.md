@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Cartesian graphs"
+title:  "Common function graphs"
 categories: math
 header: mathematics
 ---

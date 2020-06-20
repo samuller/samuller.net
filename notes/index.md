@@ -5,7 +5,11 @@ layout: page
 # Mathematics
 
 * [Terminology](math-terminology)
-* [Cartesian graphs](math-graphs)
+
+Graphs:
+
+* [Cartesian graphing](math-graphing)
+* [Common function graphs](math-graphs)
 
 Algebra:
 
