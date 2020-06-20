@@ -24,7 +24,7 @@ a_{12} & a_{22} & \cdots & a_{m2}\\
 \vdots & \vdots & \ddots & \vdots\\
 a_{1n} & a_{2n} & \ldots & a_{mn}\\
 \end{bmatrix}_{m\times n}
-$$.
+$$
 
 The transposed matrix $\mathbf{A}^T$ is a mirror image of $\mathbf{A}$ where the symmetry-axis is the main diagonal. Transposing is thus an operation where the columns of a matrix are swapped with its rows and has no effect on the values on the main diagonal.
 
@@ -49,7 +49,7 @@ a_{m1} & a_{m2} & \ldots & a_{mn}\\
 \end{bmatrix}
 $$
 
-Every element in a matrix has a *cofactor*. The cofactor for $a_{rk}$ (at row $r$ and column $k$ in $\mathbf{A}$) is called $C_{rk}$. The cofactor is determined with the following calculation:
+Every element in a matrix has a *cofactor*. The cofactor for $a_{rk}$ (at row $r$ and column $k$ in $\mathbf{A}$) is called $C_{rk}.$ The cofactor is determined with the following calculation:
 
 $$C_{rk} = (-1)^{r+k}\cdot \mathbf{M}_{rk}$$
 
