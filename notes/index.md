@@ -5,6 +5,7 @@ layout: page
 # Mathematics
 
 * [Terminology](math-terminology)
+* [Cartesian graphs](math-graphs)
 
 Algebra:
 
