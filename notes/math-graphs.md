@@ -96,6 +96,8 @@ Properties:
 - No negative $y$ values
 - Graph has a symmetry axis at $x = 0$ such that the negative $x$ values reflect the positive $x$ values
 
+&nbsp;
+
 ## Exponential
 
 ![graph of e^x](/img/math/e^x.svg){: height="35%" width="35%" class="float-right hover-highlight"}
@@ -134,3 +136,41 @@ Properties:
 - Inverse of the exponential graph
 - $x$-intercept is always at 1 since $a^0 = 1$
 - Asymptote at $x = 0$
+
+## Floor
+
+![graph of floor(x)](/img/math/floor(x).svg){: height="35%" width="35%" class="float-right hover-highlight"}
+
+Equation:
+
+$$
+\begin{align}
+y =& \lfloor x\rfloor\\
+=& \max\{m \in \mathbb{Z}\ |\ m \leq x\}
+\end{align}
+$$
+
+Properties:
+
+- $\lfloor x\rfloor = m$ if and only if $m \leq x < m + 1$
+- $\lfloor x\rfloor = m$ if and only if $x - 1 < m \leq x$
+
+&nbsp;
+
+&nbsp;
+
+## Heaviside step
+
+![graph of H(x)](/img/math/H(x).svg){: height="35%" width="35%" class="float-right hover-highlight"}
+
+Equation:
+
+$$
+\begin{align}
+y = H(x) =& \left\{ \begin{array}{rl}
+    0, & x < 0\\
+    1, & x \geq 0
+   \end{array} \right.\\
+=& \dfrac{x + |x|}{2x}
+\end{align}
+$$
