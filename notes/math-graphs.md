@@ -37,9 +37,12 @@ Properties:
 
 Equation:
 
-$$y = ax^2 + bx + c$$
-
-$$y = a(x + p)^2 + q$$
+$$
+\begin{align}
+y =&\ ax^2 + bx + c\\
+=&\ a(x + p)^2 + q
+\end{align}
+$$
 
 Interpretation of constants:
 
@@ -54,7 +57,7 @@ Interpretation of constants:
 
 Properties:
 
-- Vertex/Symmetry axis at $(p,q)$ or $\left(\dfrac{b}{2a}, -\dfrac{b^2 - 4ac}{4a}\right)$
+- Vertex/symmetry axis at $(p,q)$ or $\left(\dfrac{b}{2a}, -\dfrac{b^2 - 4ac}{4a}\right)$
 - $\Delta = b^2 - 4ac$, called the discriminant, determines number of solutions or $x$-intercepts
   - $\Delta > 0$: 2 solutions
   - $\Delta = 0$: 1 solution
@@ -174,3 +177,42 @@ y = H(x) =& \left\{ \begin{array}{rl}
 =& \dfrac{x + |x|}{2x}
 \end{align}
 $$
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+## Polynomials
+
+![graph of (x+3)(x - 2)^2(x + 1)^3](/img/math/(x+3)(x - 2)^2(x + 1)^3.svg){: height="35%" width="35%" class="float-right hover-highlight"}
+
+Equation:
+
+$$
+\begin{align}
+y =&\ a_nx^n + a_{n-1}x^{n-1} + ... + a_2x^2 + a_1x + a_0\\
+=&\ a_n(x - r_1)...(x - r_n)
+\end{align}
+$$
+
+Interpretation of constants:
+
+- $n$ is the *degree* of the polynomial and determines direction of arms/branches (endpoints that approach $-\infty$ and $\infty$)
+  - If $n$ is odd (1,3,5,...) both branches move in opposite directions
+  - If $n$ is even (2,4,...) the branches are parabolic and move in the same direction
+- $a_n$ determines the direction of branches
+  - $a > 0$: branch approaching positive $\infty$ increases (average gradient positive if $n$ is odd)
+  - $a < 0$: branch approaching positive $\infty$ decreases (average gradient negative if $n$ is odd)
+- $r_i$ are called the factors, *roots* or $x$-intercept points ($1 \leq i \leq n$)
+
+Properties:
+
+- Behaviour near the root intercepts are determined by the number of identical factors/roots, called the factor's *multiplicity*
+  - Multiplicity 1: similar to a line, the graph crosses or intersects the root intercept
+  - Multiplicity 2 or even: similar to a parabola, the graph touches and "bounces" at the intercept (the $x$-axis acts as a *tangent*)
+  - Multiplicity 3 or odd: similar to a cubic, the graph crosses with an S-shape near the intercept
+  - Higher values of multiplicity: even or odd determines the main behaviour, but higher values increase the flatness of the curvature
+
+For more details see this chapter on [polynomial functions](https://courses.lumenlearning.com/wmopen-collegealgebra/chapter/graphs-of-polynomial-functions/) by Lumen Learning.
