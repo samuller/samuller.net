@@ -65,7 +65,7 @@ _Therefore, try to rewrite a function into a function that's continuous at the p
 
 ### Use one-sided limits
 
-$\displaystyle\lim_{x\to a}f(x)$ exists if both $\displaystyle\lim_{x\to a-}f(x) $ and $\displaystyle\lim_{x\to a+}f(x)$ exist and are equal.
+$\displaystyle\lim_{x\to a}f(x)$ exists if both $\displaystyle\lim_{x\to a-}f(x)$ and $\displaystyle\lim_{x\to a+}f(x)$ exist and are equal.
 
 _Useful to find the limit of discontinuous functions._
 

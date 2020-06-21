@@ -47,11 +47,11 @@ $\displaystyle\int c\cdot f(x)\,dx = c\cdot\int f(x)\,dx$
 
 $\displaystyle\int f(x)\pm g(x)\,dx = \int f(x)\,dx \pm \int g(x) \,dx$
 
-$\displaystyle\int f(x)\cdot g(x)\,dx = f(u)\cdot G(x)-  \int f'(u)G(x) \,dx $ with $\displaystyle G(x) = \int g(x)\,dx$
+$\displaystyle\int f(x)\cdot g(x)\,dx = f(u)\cdot G(x)-  \int f'(u)G(x) \,dx$ with $\displaystyle G(x) = \int g(x)\,dx$
 
-$\displaystyle\int \frac{f'(x)}{f(x)}\,dx = \int \frac{1}{u}\,du $ with $u = f(x)$
+$\displaystyle\int \frac{f'(x)}{f(x)}\,dx = \int \frac{1}{u}\,du$ with $u = f(x)$
 
-$\displaystyle\int f(g(x))\cdot g'(x)\,dx = \int f(u)\,du $ with $u = g(x)$
+$\displaystyle\int f(g(x))\cdot g'(x)\,dx = \int f(u)\,du$ with $u = g(x)$
 
 ## Indefinite integral rules
 

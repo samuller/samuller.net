@@ -205,7 +205,7 @@ Interpretation of constants:
 - $a_n$ determines the direction of branches
   - $a > 0$: branch approaching positive $\infty$ increases (average gradient positive if $n$ is odd)
   - $a < 0$: branch approaching positive $\infty$ decreases (average gradient negative if $n$ is odd)
-- $r_i$ are called the factors, *roots* or $x$-intercept points ($1 \leq i \leq n$)
+- $r_i$ are called the factors, roots or $x$-intercept points ($1 \leq i \leq n$)
 
 Properties:
 
