@@ -1,6 +1,6 @@
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
-  for = "*.png"
+  for = "*"
 
   [headers.values]
     cache-control = "public, max-age=600"
