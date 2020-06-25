@@ -66,8 +66,8 @@ $$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} $$
 
 | Symbol                               | Name                           | Examples                                                     | Closed operations     |
 |--------------------------------------|--------------------------------|--------------------------------------------------------------|-----------------------|
-| $\mathbb{N}^* = \mathbb{Z}^+$        | Counting numbers               | $1,2,3$                                                      | $+,\times$            |
-| $\mathbb{N}_0 = \mathbb{Z}^{\geq 0}$ | Natural numbers                | $0,1,2,3$                                                    | $+,\times$            |
+| $\mathbb{N}^* = \mathbb{Z}^+$        | Counting numbers               | $1,2,3$                                                      | $+,\times,a^b$        |
+| $\mathbb{N}_0 = \mathbb{Z}^{\geq 0}$ | Natural numbers                | $0,1,2,3$                                                    | $+,\times,a^b$        |
 | $\mathbb{Z}$                         | Integers                       | $\text{-}3,\text{-}2,\text{-}1,0,1,2,3$                      | $+,\times,-$          |
 | $\mathbb{Q}$                         | Rational numbers               | $\text{-}\frac{1}{2},0,\frac{1}{2},0.\bar{7},0.\dot{8},1,3$  | $+,\times,-,\div$     |
 | $\mathbb{R}$                         | Real numbers                   | $\text{-}1,0,\frac{1}{2},1,\sqrt{2},2,e,3,\pi$               | $+,\times,-,\div$     |
