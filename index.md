@@ -2,6 +2,7 @@
 layout: page
 title: Welcome
 permalink: /
+gentime: yes
 ---
 # Welcome
 

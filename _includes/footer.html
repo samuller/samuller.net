@@ -4,7 +4,11 @@
     <div style="display: flex">
       <span>&emsp;&emsp;</span>
     <span style="flex: 1">
+      {% if page.gentime %}
       Copyright &copy; 2014 - <span title="{{ site.time }}">{{ site.time | date: '%Y' }}</span>
+      {% else %}
+      Copyright &copy; 2014 - <span>{{ site.time | date: '%Y' }}</span>
+      {% endif %}
       <a href="/">Simon Müller</a>
     </span>
     <span class="theme-switcher button" onclick="switchTheme()">&emsp;⋮&emsp;</span>
