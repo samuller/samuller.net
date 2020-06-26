@@ -37,6 +37,9 @@ if (isVueLoaded()) {
     // delete filler div
     var el = document.querySelector('#inCase');
     el.parentNode.removeChild(el);
+    // remove "display: hidden" inline style on app div
+    el = document.querySelector('#quoteApp');
+    el.style.removeProperty('display');
 }
 
 var app = new Vue({
