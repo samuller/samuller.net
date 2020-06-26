@@ -25,7 +25,8 @@ body {
     color: rgb(var(--text-color-rgb));
 
     border-top: 4px solid #000;
-    background: var(--background-image);
+    background: var(--background-image); //, linear-gradient(to right, #71B280, #134E5E);
+
     // background: $background-image;
   	background-size: cover;
     background-repeat: no-repeat;
@@ -42,7 +43,18 @@ body {
     line-height: 1.5em;
 }
 
-
+/*
+// Custom colors for Chrome scrollbar
+body::-webkit-scrollbar {
+    width: 16px;
+}
+body::-webkit-scrollbar-track {
+    background: rgba(28,82,78,1);
+}
+body::-webkit-scrollbar-thumb {
+    background: rgba(117,149,147,1);
+}
+*/
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm

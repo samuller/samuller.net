@@ -31,3 +31,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+# Minimize CSS and strip comments
+# sass:
+#     style: compressed

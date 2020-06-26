@@ -36,7 +36,7 @@ html {
     // unquote() hack needed because Ruby SASS has bug parsing variables that use url()
     // #{} needed for CSS variables?
     // https://stackoverflow.com/questions/25136523/ignore-parts-of-sass-file-for-parsing
-    --background-image: #{unquote("url('../img/background.png')")};
+    --background-image: #{unquote("url('../img/background.png')")}; // linear-gradient(to right, #71B280, #134E5E)
     --background-color: #1f6d65; // rgb(31, 109, 101)
     --text-color-rgb: 204,204,204;
     --site-title-color: white;
