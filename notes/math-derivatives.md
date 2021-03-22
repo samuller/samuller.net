@@ -29,7 +29,7 @@ $\displaystyle \frac{d}{dx}(\frac{f(x)}{g(x)}) = \frac{g(x)\cdot f'(x)-f(x)\cdot
 
 ## Chain rule
 
-$\displaystyle \frac{d}{dx}(f(g(x))) = f'(g(x))\cdot g'(x)$ (let op dat $f(g(x)) = (f^\circ g)(x)$)
+$\displaystyle \frac{d}{dx}(f(g(x))) = f'(g(x))\cdot g'(x)$ <!-- (note that $f(g(x)) = (f^\circ g)(x)$) -->
 
 $\displaystyle \frac{d}{dx}(f^{-1}(x)) = \frac{1}{f(f^{-1}(x))}$
 
