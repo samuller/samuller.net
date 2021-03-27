@@ -113,7 +113,10 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
+    // Don't justify align along with text
     text-align: left;
+    // Prevent floating elements (e.g. images) from overlapping with section headers
+    clear: both;
 }
 
 
