@@ -186,8 +186,6 @@ $$
 
 ## Polynomials
 
-![graph of (x+3)(x - 2)^2(x + 1)^3](/img/math/(x+3)(x - 2)^2(x + 1)^3.svg){: height="35%" width="35%" class="float-right hover-highlight"}
-
 Equation:
 
 $$
@@ -196,6 +194,9 @@ y =&\ a_nx^n + a_{n-1}x^{n-1} + ... + a_2x^2 + a_1x + a_0\\
 =&\ a_n(x - r_1)...(x - r_n)
 \end{align}
 $$
+{: style="clear:both"}
+
+![graph of (x+3)(x - 2)^2(x + 1)^3](/img/math/(x+3)(x - 2)^2(x + 1)^3.svg){: height="35%" width="35%" class="float-right hover-highlight"}
 
 Interpretation of constants:
 
