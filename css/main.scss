@@ -114,6 +114,20 @@ html[data-theme="white"] {
     background-color: rgba(255,255,255,0.5);
 }
 
+// Make figure captions align with figure
+// https://stackoverflow.com/questions/6534473/how-can-i-make-the-width-of-my-figcaption-match-the-width-of-the-img-inside
+.image {
+    display: table;
+}
+.image figcaption {
+    // display: table-caption;
+    caption-side: bottom;
+
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
