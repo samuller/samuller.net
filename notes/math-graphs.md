@@ -196,7 +196,7 @@ y =&\ a_nx^n + a_{n-1}x^{n-1} + ... + a_2x^2 + a_1x + a_0\\
 $$
 {: style="clear:both"}
 
-![graph of (x+3)(x - 2)^2(x + 1)^3](/img/math/(x+3)(x - 2)^2(x + 1)^3.svg){: height="35%" width="35%" class="float-right hover-highlight"}
+![graph of (x + 3)(x - 2)^2(x + 1)^3](/img/math/(x + 3)(x - 2)^2(x + 1)^3.svg){: height="35%" width="35%" class="float-right hover-highlight"}
 
 Interpretation of constants:
 
