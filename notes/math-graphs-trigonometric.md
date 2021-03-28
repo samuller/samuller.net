@@ -5,6 +5,7 @@ categories: math
 header: mathematics
 ---
 
+{% comment %}
 <!--
 period, asymptotes
 - Function: $\mathrm{sin}(x)$
@@ -12,6 +13,7 @@ period, asymptotes
 class="float-right"
 {: style="width: 32%"}
 -->
+{% endcomment %}
 
 {% include image.html url="/img/math/sin(x).svg" alt="graph of sin(x).svg" description="Sine: $\mathrm{sin}(x)$" %}
 {% include image.html url="/img/math/cos(x).svg" alt="graph of cos(x).svg" description="Cosine: $\mathrm{cos}(x)$" %}

@@ -2,6 +2,19 @@
 layout: page
 ---
 
+{% comment %}
+<!--
+Arithmetic: decimals to fractions, values for log, trig, geometries, product of negatives, absolute values
+Elementary Algebra: simplifying equations, inequalities, long division
+Series
+Functions/graphing: implicit graphs, trig, 
+Linear algebra
+Partial differential equations
+
+Eigenvalues, SVD
+-->
+{% endcomment %}
+
 # Mathematics
 
 * [Terminology](math-terminology)
@@ -31,13 +44,3 @@ Linear algebra:
 * [Matrices](math-matrices)
 * [Matrix operations](math-matrix-operations)
 
-<!--
-Arithmetic: decimals to fractions, values for log, trig, geometries, product of negatives, absolute values
-Elementary Algebra: simplifying equations, inequalities, long division
-Series
-Functions/graphing: implicit graphs, trig, 
-Linear algebra
-Partial differential equations
-
-Eigenvalues, SVD
--->

@@ -5,6 +5,15 @@ categories: math
 header: mathematics
 ---
 
+{% comment %}
+<!--
+Cartesian axes
+Functions
+
+Rotations require implicit graphs
+-->
+{% endcomment %}
+
 ## Transformations
 
 With the graph for $y = f(x)$ already known.
@@ -65,10 +74,3 @@ Strategy for drawing/graphing arbitrary functions (some steps only apply to poli
         - Same as for horizontal asymptote
         - Use long division te remove division
         - Put formula in the form $f(x) - (mx + c)$
-
-<!--
-Cartesian axes
-Functions
-
-Rotations require implicit graphs
--->

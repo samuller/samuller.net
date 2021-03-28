@@ -5,6 +5,15 @@ categories: math
 header: mathematics
 ---
 
+{% comment %}
+<!--
+Rational
+$\frac{a}{b}$ where $\\{ a,b \in \mathbb{Z}, b \neq 0 \\}$
+Complex conjugate
+Conjugate (square roots)
+-->
+{% endcomment %}
+
 PEMDAS: Parentheses / Exponentiation / Multiplication and Division / Addition and Subtraction
 
 $\ a + b = c$
@@ -76,10 +85,3 @@ $$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} $$
 | $\mathbb{C} \setminus \mathbb{R}$    | Imaginary numbers              | $\sqrt{-2},3i$                                               |                       |
 | $\mathbb{P}$                         | Prime numbers                  | $2,3,5,7,11,127,2^{31}-1$                                    |                       |
 |                                      | Undefined functions/operations | $\frac{1}{0}, \tan{\frac{\pi}{2}}, \log{0}, \infty, 0^0$     |                       |
-
-<!--
-Rational
-$\frac{a}{b}$ where $\\{ a,b \in \mathbb{Z}, b \neq 0 \\}$
-Complex conjugate
-Conjugate (square roots)
--->
