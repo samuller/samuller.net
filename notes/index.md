@@ -10,6 +10,7 @@ Graphs:
 
 * [Cartesian graphing](math-graphing)
 * [Common function graphs](math-graphs)
+* [Trigonometric graphs](math-graphs-trigonometric)
 
 Algebra:
 
@@ -34,7 +35,9 @@ Linear algebra:
 Arithmetic: decimals to fractions, values for log, trig, geometries, product of negatives, absolute values
 Elementary Algebra: simplifying equations, inequalities, long division
 Series
-Functions/graphing
+Functions/graphing: implicit graphs, trig, 
 Linear algebra
 Partial differential equations
+
+Eigenvalues, SVD
 -->
