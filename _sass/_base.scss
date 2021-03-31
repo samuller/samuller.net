@@ -296,15 +296,21 @@ a.nolink {
     margin-bottom: 12px;
 }
 
-
-
-.notice{
+.align-center{
 	text-align: center;
 }
 
-.notice form{
+.contact{
+	text-align: center;
+}
+
+.contact form{
+    width: 75%;
 	margin-top: 0em;
-  margin-bottom: 1.5em;
+	margin-bottom: 1.5em;
+    @include media-query($on-palm) {
+        width: 95%
+    }
 }
 
 
