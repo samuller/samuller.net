@@ -157,6 +157,7 @@ blockquote {
     /* Add horizontal scrollbar on small screens */
     overflow-x: auto;
     overflow-y: clip;
+    text-align: left;
 }
 
 blockquote:before {
