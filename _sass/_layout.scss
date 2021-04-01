@@ -212,6 +212,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    overflow-x: auto;
     // text-align: justify;
 
    	@include shadow-box;
