@@ -3,7 +3,7 @@ layout: post
 title:  "WFDF Calls"
 categories: ultimate sport
 header: Ultimate
-style: no_nav
+style: no_nav no_title_heading
 ---
 
 <style type="text/css">
@@ -11,6 +11,10 @@ style: no_nav
     color: #2dafc8;
   }
 </style>
+
+<div class="no-print">
+{% include header-with-image-link.html text="WFDF Calls" img_src="/img/icon-file-pdf.svg" img_alt="pdf icon" link="/ultimate/ultimate-wfdf-calls.pdf" %}
+</div>
 
 A quick summary of the common calls that can be made on the field when playing Ultimate frisbee according to the 2021 [WFDF rules](https://rules.wfdf.org/). Relevant rule numbers are stated in <span class="ref-link">square brackets</span> and **bolded** words represent the exact word called on the field.
 
