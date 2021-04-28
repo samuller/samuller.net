@@ -59,6 +59,6 @@ Contact with an opponent’s extended arms or hands that are about to, or alread
 ## Other stoppages
 
 - **Injury** <span class="ref-link">[19.1]</span>: when a player is injured; if they weren't injured by an opponent, they must either be substituted or use a time-out <span class="ref-link">[19.1.2]</span>
-- **Technical** <span class="ref-link">[19.2]</span>: any condition that endangers players
+- **Technical** <span class="ref-link">[19.2]</span>: any condition that endangers players on the field
 - **Time-out**: a limited number of time-outs can be used, depending on the league/tournament <span class="ref-link">[20]</span>
 - **Equipment**: any player may briefly *extend* a stoppage of play to fix faulty equipment, but active play may not be stopped for this purpose <span class="ref-link">[10.3]</span>
