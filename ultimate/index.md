@@ -1,5 +1,6 @@
 ---
 layout: page
+style: no_nav
 ---
 
 # Ultimate
