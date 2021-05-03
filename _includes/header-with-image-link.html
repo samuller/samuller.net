@@ -1,4 +1,15 @@
-<a href="{{ include.link }}">
-    <img src="{{ include.img_src }}" alt="{{ include.img_alt }}" style="height: 1.8em; margin: 0.5em;" class="float-right darken-till-hover">
+<span style="height: 1.8em; margin: 0.5em;" class="float-right">
+{% if page.style contains 'ref_toggle' %}
+<span title="Hide/show references" 
+    style="vertical-align: middle;  padding: 0.5em; background-color: rgba(255,255,255,0.1);" class="darken-till-hover"
+    onclick="toggleRefLinks()">
+    <strong>[ ]</strong>
+</span>
+{% endif %}
+{% if include.img_src %}
+<a href="{{ include.link }}" title="{{ include.title }}">
+    <img src="{{ include.img_src }}" alt="{{ include.img_alt }}" style="height: 1.8em" class="float-right darken-till-hover">
 </a>
+{% endif %}
+</span>
 <h1 style="clear:none">{{ include.text }}</h1>

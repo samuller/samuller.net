@@ -16,10 +16,13 @@ style: no_nav no_title_heading
 "Contact" infraction: 17.6.1.3
 {% endcomment %}
 <div class="no-print">
-{% include header-with-image-link.html text="WFDF Call Types" img_src="/img/icon-file-pdf.svg" img_alt="pdf icon" link="/ultimate/ultimate-wfdf-calls.pdf" %}
+{% include header-with-image-link.html text="WFDF Call Types"
+  img_src="/img/icon-file-pdf.svg" img_alt="pdf icon"
+  title="Download PDF"
+  link="/ultimate/ultimate-wfdf-calls.pdf" %}
 </div>
 
-A quick summary of the common calls that can be made on the field when playing Ultimate frisbee according to the 2021 [WFDF rules](https://rules.wfdf.org/). Relevant rule numbers are stated in <span class="ref-link" style="display: initial">square brackets</span> and **bolded** words represent the exact word called on the field.
+A quick summary of the common calls that can be made on the field when playing Ultimate frisbee according to the 2021 [WFDF rules](https://rules.wfdf.org/). Relevant rule numbers are stated in <span class="ref-link-desc">square brackets</span> and **bolded** words represent the exact word called on the field.
 
 ## Infractions
 
@@ -27,7 +30,7 @@ Infractions are calls that do not stop play<span class="ref-link"> [15.2,18.2.6]
 
 There are only two 'types' of infraction<span class="ref-link"> [15.2]</span>:
 - **Travel**<span class="ref-link"> [18.2]</span>: whenever the person catching the disc does not stop as fast as possible, or they change direction after properly catching<span class="ref-link"> [18.2.5.1]</span>, or they establish a pivot point at an invalid position (e.g. out of bounds)<span class="ref-link"> [18.2.5.3]</span>
-- Marking infractions<span class="ref-link"> [18.1]</span>, of which there are 6 types, are usually due to some action of the defending *marker* against the *thrower*
+- Marking infractions<span class="ref-link"> [18.1]</span>, of which there are 6 types, are usually due to some action of the defending *marker* against the *thrower*:
   - **Fast count**: counting faster than 1 second intervals or making any other counting mistake (starting count, ordering, etc.)<span class="ref-link"> [18.1.1.1]</span>
   - **Straddle**: a line between the defender's feet are closer than one disc diameter from the thrower's pivot point<span class="ref-link"> [18.1.1.2]</span>
   - **Disc space**: a mark being too close to the thrower, i.e. less than one disc diameter from the thrower's torso<span class="ref-link"> [18.1.1.3]</span>

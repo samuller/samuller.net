@@ -3,7 +3,7 @@ layout: post
 title:  "WFDF Call Sequence"
 categories: ultimate sport
 header: Ultimate
-style: no_nav
+style: no_nav no_title_heading ref_toggle
 ---
 
 <style type="text/css">
@@ -11,6 +11,10 @@ style: no_nav
     color: #2dafc8;
   }
 </style>
+
+<div class="no-print">
+{% include header-with-image-link.html text="WFDF Call Sequence" %}
+</div>
 
 A quick summary of how calls should be handled on the field when playing Ultimate frisbee according to the 2021 [WFDF rules](https://rules.wfdf.org/).
 
