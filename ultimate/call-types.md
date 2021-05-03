@@ -3,7 +3,7 @@ layout: post
 title:  "WFDF Call Types"
 categories: ultimate sport
 header: Ultimate
-style: no_nav no_title_heading
+style: no_nav no_title_heading ref_toggle
 ---
 
 <style type="text/css">
