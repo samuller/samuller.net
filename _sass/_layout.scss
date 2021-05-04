@@ -259,7 +259,7 @@
     // line-height: 1;
 
     @include media-query($on-laptop) {
-        // font-size: 36px;
+        // font-size: 36px; // h2, h3, h4: 28px, 22px, 18px
     }
 }
 
@@ -273,27 +273,15 @@
         line-height: 1.5em;
         border-bottom: 1px solid rgba(var(--text-color-rgb), 0.7);
         margin-bottom: 0.5em;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
     }
 
     h3 {
         font-size: 1.05em;
         margin-bottom: 0.5em;
         text-decoration: underline;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
     }
 
     h4 {
         font-size: 0.7em;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
     }
 }
