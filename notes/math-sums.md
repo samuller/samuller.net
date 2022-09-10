@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Riemann sums"
+title:  "Summation & Riemann sums"
 categories: math
 header: mathematics
 ---
