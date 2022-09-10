@@ -27,4 +27,4 @@ $\displaystyle \sum^n_{r=1}r = \frac{n(n+1)}{2}$
 
 $\displaystyle \sum^n_{r=1}r^2 = \frac{n(n+1)(2n+1)}{6}$
 
-$\displaystyle \sum^n_{r=1}r^2 = \left(\frac{n(n+1)}{2}\right)^2$
+$\displaystyle \sum^n_{r=1}r^3 = \frac{n^2(n+1)^2}{4}$
