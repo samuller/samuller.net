@@ -1,17 +1,9 @@
 ---
 layout: post
-title:  "Summation & Riemann sums"
+title:  "Summation"
 categories: math
 header: mathematics
 ---
-
-$$\int^b_af(x)dx = \lim_{n\to\infty}\sum^n_{r=1}f(x_r)\Delta x$$
-
-$$\textstyle x_r = a+\frac{r}{n}(b-a)$$
-
-$$\textstyle \Delta x=\frac{b-a}{n}$$
-
-Where $n$ is the number of divisions which determines the accuracy.
 
 ## General rules
 
@@ -28,3 +20,13 @@ $\displaystyle \sum^n_{r=1}r = \frac{n(n+1)}{2}$
 $\displaystyle \sum^n_{r=1}r^2 = \frac{n(n+1)(2n+1)}{6}$
 
 $\displaystyle \sum^n_{r=1}r^3 = \frac{n^2(n+1)^2}{4}$
+
+## Riemann sums
+
+$$\int^b_af(x)dx = \lim_{n\to\infty}\sum^n_{r=1}f(x_r)\Delta x$$
+
+$$\textstyle x_r = a+\frac{r}{n}(b-a)$$
+
+$$\textstyle \Delta x=\frac{b-a}{n}$$
+
+Where $n$ is the number of divisions which determines the accuracy.

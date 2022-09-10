@@ -36,7 +36,7 @@ Calculus:
 * [Limits](math-limits)
 * [Continuity](math-continuity)
 * [Derivatives](math-derivatives)
-* [Summation & Riemann sums](math-sums)
+* [Summation](math-sums)
 * [Integrals](math-integrals)
 
 Linear algebra:
