@@ -7,7 +7,7 @@
 
 # Site settings
 title: Simon Müller
-description: "Quotes about science, software and life as well as math notes about algebra and calculus"
+description: "Quotes and notes"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
