@@ -14,6 +14,14 @@ if ('speechSynthesis' in window && window.speechSynthesis.getVoices().length > 0
 }
 var voiceVolume = 1.0;
 
+// Centralise all spoken words
+const _lang = {
+    onStart: "Starting countdown",
+    onEnd: "Countdown completed.",
+    onPause: "Pause",
+    onResume: "Continuing countdown",
+};
+
 function speak(message) {
     if (!speechSupported) {
         return;
@@ -66,7 +74,7 @@ function updateCountdown() {
         } else {
             // Stop countdown when it reaches zero
             resetCountdown();
-            speak("Countdown completed.");
+            speak(_lang.onEnd);
         }
     }
     if (varUpdated || forceNextUpdate) {
@@ -83,11 +91,11 @@ function toggleCountdown() {
     countdownActive = !countdownActive;
 
     // Select a message to indicate the update in countdown state
-    var updateMsg = "Pause";
+    var updateMsg = _lang.onPause;
     if (countdownActive) {
-        updateMsg = "Continuing countdown";
+        updateMsg = _lang.onResume;
         if (!countdownStarted) {
-            updateMsg = "Starting countdown";
+            updateMsg = _lang.onStart;
         }
     }
     speak(updateMsg);
