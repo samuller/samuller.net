@@ -162,10 +162,12 @@ class CountdownTimer extends HTMLElement {
             if (this.sec > 0) {
                 this.sec -= 1;
                 varUpdated = true;
+                if (this.sec == 0) {
+                    speak(_lang.onEnd);
+                }
             } else {
                 // Stop countdown when it reaches zero
                 this.reset();
-                speak(_lang.onEnd);
             }
         }
         if (varUpdated || this.forceNextUpdate) {
