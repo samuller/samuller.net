@@ -107,6 +107,7 @@ class CountdownTimer extends HTMLElement {
         // console.log('changed', name, oldValue, newValue, this);
         if (name == "secs") {
             this.initTime = newValue;
+            this.reset();
         }
     }
 
