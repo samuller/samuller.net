@@ -84,7 +84,7 @@ class CountdownTimer extends HTMLElement {
      * List all attributes to observe for changes.
      */
     static get observedAttributes () {
-        return [];
+        return ["secs"];
     }
 
     /**
@@ -94,7 +94,10 @@ class CountdownTimer extends HTMLElement {
      * @param  {String} newValue The new attribute value
      */
     attributeChangedCallback (name, oldValue, newValue) {
-        console.log('changed', name, oldValue, newValue, this);
+        // console.log('changed', name, oldValue, newValue, this);
+        if (name == "secs") {
+            this.initTime = newValue;
+        }
     }
 
     handleClick () {
