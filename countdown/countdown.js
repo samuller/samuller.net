@@ -200,7 +200,8 @@ class CountdownTimer extends HTMLElement {
 
     render() {
         const hhmmss = CountdownTimer.secToHHMMSS(this.sec)
-        this.innerHTML = hhmmss;
+        const hms = [hhmmss.substr(0, 3), hhmmss.substr(3, 3), hhmmss.substr(6, 2)]
+        this.innerHTML = `<span>${hms[0]}</span><span>${hms[1]}</span><span>${hms[2]}</span>`;
         // Show current timer in page/tab title (won't work for multiple timers on same page)
         document.title = hhmmss;
     }
