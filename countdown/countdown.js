@@ -212,3 +212,42 @@ class CountdownTimer extends HTMLElement {
 if ('customElements' in window) {
 	customElements.define('app-countdown', CountdownTimer);
 }
+
+/**
+ * Setup media control components.
+ */
+
+document.getElementById('inputsecs').addEventListener("keypress", function (evt) {
+    evt = evt || window.event;
+    var charCode = (typeof evt.which == "undefined") ? evt.keyCode : evt.which;
+    var charStr = String.fromCharCode(charCode);
+    if (!charStr.match(/^[0-9]+$/)) {
+        evt.preventDefault();
+    }
+});
+
+// Note that below we often take advantage of the fact that component id's get set directly on the "window" global,
+// and we can therefore use them directly as variables, e.g. an id of "component" becomes window["component"] or
+// window.component which can then be accessed directly as just "component", but only if the name is also a valid
+// parse-able variable name (i.e. no dashes which would parse to minuses).
+
+function clickPlayToggle() {
+    countdown0.toggle();
+}
+
+function clickReset() {
+    countdown0.reset();
+}
+
+function clickSet() {
+    // Toggle input section being shown (using the "hidden" boolean attribute)
+    setsecs.hidden = !setsecs.hidden;
+    // Toggle button shadow to make it look clickable (to indicate that clicking again does something)
+    // btnset.setAttribute('shadow', !(btnset.getAttribute('shadow') === 'true'));
+    btnset.setAttribute('shadow', !setsecs.hidden);
+    // After closing input section
+    if (setsecs.hidden) {
+        // Set countdown attribute
+        countdown0.setAttribute('secs', inputsecs.value);
+    }
+}

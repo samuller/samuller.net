@@ -4,8 +4,29 @@ header: "Countdown"
 style: no_nav
 ---
 
-<div style="min-height: 10vh; display: flex; align-items: center; justify-content: center;">
-  <app-countdown style="display: block; text-align: center; flex: 1; font-size: 50px;"></app-countdown>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<div style="min-height: 10vh; margin: 1em; display: flex; flex-direction: column; gap: 1em; align-items: center; justify-content: center;">
+  <app-countdown id="countdown0" secs="10" style="display: block; text-align: center; flex: 1; font-size: 50px;"></app-countdown>
+  <div style="flex: 1; text-align: center">
+    <button  id="btnplay" class="media-controls" onclick="clickPlayToggle()">
+      <i class="fa fa-play"></i>
+      <!-- <i class="fa fa-pause"></i> -->
+    </button>
+    <button id="btnreset" class="media-controls" onclick="clickReset()">
+      <i class="fa fa-rotate-left"></i>
+    </button>
+    <button  id="btnset" class="media-controls" shadow="false" onclick="clickSet();">
+      Set
+    </button>
+  </div>
+
+  <div id="setsecs" hidden>
+    <label for="inputsecs">Starting seconds:</label>
+    <input type="number" id="inputsecs" name="inputsecs" min="1" max="360000" value="10"
+      style="width: 5em; padding: 2px">
+  </div>
+
 </div>
 
 
