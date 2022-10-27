@@ -142,10 +142,12 @@ class CountdownTimer extends HTMLElement {
     }
 
     reset() {
-        this.active = false;
+        this.started = false;
         this.sec = this.initTime;
+        this.active = false;
         this.forceNextUpdate = true;
         this.clearTimer();
+        this.render();
     }
 
     startOrResume() {
