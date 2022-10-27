@@ -7,11 +7,21 @@ var speechSupported = false;
 var speech = null;
 if ('speechSynthesis' in window && window.speechSynthesis.getVoices().length > 0) {
     speechSupported = true;
-    var speech = new SpeechSynthesisUtterance();
+    speech = new SpeechSynthesisUtterance();
 } else {
     speechSupported = false;
     console.log("Your browser doesn't support text to speech!");
 }
+
+// Support browsers that load voices after a delay (of checking remote servers)
+speechSynthesis.addEventListener("voiceschanged", () => {
+    if(window.speechSynthesis.getVoices().length > 0) {
+        speechSupported = true;
+        speech = new SpeechSynthesisUtterance();
+        console.log("Text-to-speech voices found after delay!");
+    }
+});
+
 var voiceVolume = 1.0;
 
 // Centralise all spoken words
