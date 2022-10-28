@@ -19,6 +19,12 @@ speechSynthesis.addEventListener("voiceschanged", () => {
         speechSupported = true;
         speech = new SpeechSynthesisUtterance();
         console.log("Text-to-speech voices found after delay!");
+        btnaudioicon.className = "";
+        btnaudioicon.classList.add("fa-solid", "fa-volume-high");
+    } else {
+        btnaudioicon.className = "";
+        btnaudioicon.classList.add("fa-solid", "fa-volume-xmark");
+        // and gray out button with "text: #666"
     }
 });
 
@@ -181,6 +187,8 @@ class CountdownTimer extends HTMLElement {
                 varUpdated = true;
                 if (this.sec == 0) {
                     speak(_lang.onEnd);
+                } else {
+                    speak(`${this.sec}`);
                 }
             } else {
                 // Stop countdown when it reaches zero
@@ -232,6 +240,10 @@ document.getElementById('inputsecs').addEventListener("keypress", function (evt)
 // and we can therefore use them directly as variables, e.g. an id of "component" becomes window["component"] or
 // window.component which can then be accessed directly as just "component", but only if the name is also a valid
 // parse-able variable name (i.e. no dashes which would parse to minuses).
+
+function clickSoundToggle() {
+    formsound.hidden = !formsound.hidden;
+}
 
 function clickPlayToggle() {
     let active = countdown0.toggle();

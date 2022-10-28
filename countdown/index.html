@@ -9,6 +9,10 @@ style: no_nav
 <div style="margin: 1em; display: flex; flex-direction: column; gap: 1em; align-items: center; justify-content: center;">
   <app-countdown id="countdown0" secs="10" style="display: block; text-align: center; flex: 1; font-size: 50px;"></app-countdown>
   <div style="flex: 1; text-align: center">
+    <button id="btnAudio" class="media-controls" onclick="clickSoundToggle()">
+      <!--<i class="fa-solid fa-volume-off"></i>-->
+      <i id="btnaudioicon" class="fa-solid fa-volume-high"></i>
+    </button>
     <button id="btnplay" class="media-controls" onclick="clickPlayToggle()">
       <i id="btnplayicon" class="fa-solid fa-play"></i>
       <!-- <i class="fa-solid fa-pause"></i> -->
@@ -16,7 +20,7 @@ style: no_nav
     <button id="btnreset" class="media-controls" onclick="clickReset()">
       <i class="fa-solid fa-rotate-left"></i>
     </button>
-    <button  id="btnset" class="media-controls" shadow="false" onclick="clickSet();">
+    <button id="btnset" class="media-controls" shadow="false" onclick="clickSet();">
       Set
     </button>
   </div>
@@ -25,6 +29,29 @@ style: no_nav
     <label for="inputsecs">Starting seconds:</label>
     <input type="number" id="inputsecs" name="inputsecs" min="1" max="360000" value="10"
       style="width: 5em; padding: 2px">
+  </div>
+
+  <div id="formsound" style="display: flex; flex-direction: column;" hidden>
+    <label for="inp_volume">Volume:</label>
+    <span style="display: flex">
+        <input type="range" id="inp_volume" name="inp_volume" min="0" max="100" value="50"
+            oninput="this.nextElementSibling.value = this.value; speech.volume = this.value / 100.0;">
+        <output>50</output>
+    </span>
+
+    <label for="inp_pitch">Pitch:</label>
+    <span style="display: flex">
+    <input type="range" id="inp_pitch" name="inp_pitch" min="0" max="100" value="50"
+            oninput="this.nextElementSibling.value = this.value; speech.pitch = this.value / 100.0;">
+        <output>50</output>
+    </span>
+
+    <label for="inp_rate">Rate:</label>
+    <span style="display: flex">
+    <input type="range" id="inp_rate" name="inp_rate" min="0" max="100" value="50"
+            oninput="this.nextElementSibling.value = this.value; speech.rate = this.value / 100.0;">
+        <output>50</output>
+    </span>
   </div>
 
 </div>
