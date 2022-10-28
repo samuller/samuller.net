@@ -1,4 +1,18 @@
 /**
+
+To get text-to-speech working with Chromium on Ubuntu:
+```
+# Check that spd-say is installed and working
+spd-say "some text"
+# If not, check its list of languages
+spd-say -L
+# Once working, run chromium with parameter/flag
+chromium --enable-speech-dispatcher
+```
+
+*/
+
+/**
  * Countdown timer with voice alerts on state change.
  */
 
