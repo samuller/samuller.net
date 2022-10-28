@@ -28,8 +28,6 @@ speechSynthesis.addEventListener("voiceschanged", () => {
     }
 });
 
-var voiceVolume = 1.0;
-
 // Centralise all spoken words
 const _lang = {
     onStart: "Starting countdown",
@@ -42,7 +40,6 @@ function speak(message) {
     if (!speechSupported) {
         return;
     }
-    speech.volume = voiceVolume;
     speech.lang = 'en';
 
     speech.text = message;
