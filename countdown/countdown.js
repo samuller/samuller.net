@@ -19,28 +19,36 @@ chromium --enable-speech-dispatcher
 /* Text-to-speech support */
 var speechSupported = false;
 var speech = null;
-if ('speechSynthesis' in window && window.speechSynthesis.getVoices().length > 0) {
-    speechSupported = true;
-    speech = new SpeechSynthesisUtterance();
-} else {
-    speechSupported = false;
-    console.log("Your browser doesn't support text to speech!");
-}
 
-// Support browsers that load voices after a delay (of checking remote servers)
-speechSynthesis.addEventListener("voiceschanged", () => {
+function checkVoices() {
+    speechSupported = false
+    speech = null;
     if(window.speechSynthesis.getVoices().length > 0) {
         speechSupported = true;
         speech = new SpeechSynthesisUtterance();
-        console.log("Text-to-speech voices found after delay!");
         btnaudioicon.className = "";
         btnaudioicon.classList.add("fa-solid", "fa-volume-high");
+        return true;
     } else {
         btnaudioicon.className = "";
         btnaudioicon.classList.add("fa-solid", "fa-volume-xmark");
         // and gray out button with "text: #666"
+        return false;
     }
-});
+}
+
+if ('speechSynthesis' in window) {
+    checkVoices();
+    // Support browsers that load voices after a delay (of checking remote servers)
+    speechSynthesis.addEventListener("voiceschanged", () => {
+        let supported = checkVoices();
+        if (supported) {
+            console.log("Text-to-speech voices found after delay!");
+        }
+    });
+} else {
+    console.log("Your browser doesn't support text to speech!");
+}
 
 // Centralise all spoken words
 const _lang = {
