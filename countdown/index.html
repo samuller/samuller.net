@@ -32,24 +32,31 @@ style: no_nav
   </div>
 
   <div id="formsound" style="display: flex; flex-direction: column;" hidden>
+    <label for="inp_voice">Voice:</label>
+    <span>
+        <select type="range" id="inp_voice" name="inp_voice"
+            onchange="MediaControls.setVoice(this)">
+        </select>
+    </span>
+
     <label for="inp_volume">Volume:</label>
-    <span style="display: flex">
+    <span>
         <input type="range" id="inp_volume" name="inp_volume" min="0" max="100" value="50"
-            oninput="this.nextElementSibling.value = this.value; speech.volume = this.value / 100.0;">
+            oninput="MediaControls.setVolume(this)">
         <output>50</output>
     </span>
 
     <label for="inp_pitch">Pitch:</label>
-    <span style="display: flex">
-    <input type="range" id="inp_pitch" name="inp_pitch" min="0" max="100" value="50"
-            oninput="this.nextElementSibling.value = this.value; speech.pitch = this.value / 100.0;">
+    <span>
+        <input type="range" id="inp_pitch" name="inp_pitch" min="0" max="100" value="50"
+            oninput="MediaControls.setPitch(this)">
         <output>50</output>
     </span>
 
     <label for="inp_rate">Rate:</label>
-    <span style="display: flex">
-    <input type="range" id="inp_rate" name="inp_rate" min="0" max="100" value="50"
-            oninput="this.nextElementSibling.value = this.value; speech.rate = this.value / 100.0;">
+    <span>
+        <input type="range" id="inp_rate" name="inp_rate" min="0" max="100" value="50"
+            oninput="MediaControls.setRate(this)">
         <output>50</output>
     </span>
   </div>

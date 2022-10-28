@@ -18,16 +18,26 @@ chromium --enable-speech-dispatcher
 
 /* Text-to-speech support */
 var speechSupported = false;
+var voices = [];
 var speech = null;
 
 function checkVoices() {
     speechSupported = false
     speech = null;
-    if(window.speechSynthesis.getVoices().length > 0) {
+    voices = window.speechSynthesis.getVoices();
+    if(voices.length > 0) {
         speechSupported = true;
         speech = new SpeechSynthesisUtterance();
+        // Update UI elements
         btnaudioicon.className = "";
         btnaudioicon.classList.add("fa-solid", "fa-volume-high");
+
+        inp_voice.innerHTML = "";
+        for (let i = 0; i < voices.length; i++) {
+            let name = voices[i].name;
+            let lang = voices[i].lang;
+            inp_voice.options.add(new Option(`${name} [${lang}]`, i.toString()));
+        }
         return true;
     } else {
         btnaudioicon.className = "";
@@ -292,4 +302,27 @@ function clickSet() {
         // Set countdown attribute
         countdown0.setAttribute('secs', inputsecs.value);
     }
+}
+
+class MediaControls {
+
+    static setVoice(element) {
+        speech.voice = voices[element.value];
+    }
+
+    static setVolume(element) {
+        element.nextElementSibling.value = element.value;
+        speech.volume = element.value / 100.0;
+    }
+
+    static setPitch(element) {
+        element.nextElementSibling.value = element.value;
+        speech.pitch = element.value / 100.0;
+    }
+
+    static setRate(element) {
+        element.nextElementSibling.value = element.value;
+        speech.rate = element.value / 100.0;
+    }
+
 }
