@@ -184,6 +184,9 @@ class CountdownTimer extends HTMLElement {
         this.forceNextUpdate = true;
         this.clearTimer();
         this.render();
+        // TODO: move out into onreset attribute
+        btnplayicon.classList.add("fa-play");
+        btnplayicon.classList.remove("fa-pause");
     }
 
     startOrResume() {
