@@ -170,6 +170,7 @@ class CountdownTimer extends HTMLElement {
             this.pause();
         }
         this.started = true;
+        return this.active;
     }
 
     update() {
@@ -233,11 +234,20 @@ document.getElementById('inputsecs').addEventListener("keypress", function (evt)
 // parse-able variable name (i.e. no dashes which would parse to minuses).
 
 function clickPlayToggle() {
-    countdown0.toggle();
+    let active = countdown0.toggle();
+    if (active) {
+        btnplayicon.classList.add("fa-pause");
+        btnplayicon.classList.remove("fa-play");
+    } else {
+        btnplayicon.classList.add("fa-play");
+        btnplayicon.classList.remove("fa-pause");
+    }
 }
 
 function clickReset() {
     countdown0.reset();
+    btnplayicon.classList.add("fa-play");
+    btnplayicon.classList.remove("fa-pause");
 }
 
 function clickSet() {
