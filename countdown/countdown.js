@@ -252,12 +252,12 @@ function clickReset() {
 
 function clickSet() {
     // Toggle input section being shown (using the "hidden" boolean attribute)
-    setsecs.hidden = !setsecs.hidden;
+    formsecs.hidden = !formsecs.hidden;
     // Toggle button shadow to make it look clickable (to indicate that clicking again does something)
     // btnset.setAttribute('shadow', !(btnset.getAttribute('shadow') === 'true'));
-    btnset.setAttribute('shadow', !setsecs.hidden);
+    btnset.setAttribute('shadow', !formsecs.hidden);
     // After closing input section
-    if (setsecs.hidden) {
+    if (formsecs.hidden) {
         // Set countdown attribute
         countdown0.setAttribute('secs', inputsecs.value);
     }
