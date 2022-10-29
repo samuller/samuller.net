@@ -319,7 +319,8 @@ form {
 	text-align: left;
 }
 
-input, textarea {
+input[type='text'], input[type='email'], input[type='submit'], input[type='range'], input[type='number'],
+  textarea, select {
 	box-sizing: border-box;
 	width:100%;
 	background:rgba(230, 230, 230, 0.5);
