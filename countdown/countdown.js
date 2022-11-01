@@ -278,6 +278,7 @@ document.getElementById('inputsecs').addEventListener("keypress", allowOnlyNumbe
 
 function clickSoundToggle() {
     formsound.hidden = !formsound.hidden;
+    btnAudio.setAttribute('shadow_under', !formsound.hidden);
 }
 
 function clickPlayToggle() {
