@@ -259,14 +259,17 @@ if ('customElements' in window) {
  * Setup media control components.
  */
 
-document.getElementById('inputsecs').addEventListener("keypress", function (evt) {
+// Allow only keyboard events where numbers are typed.
+function allowOnlyNumbers(evt) {
     evt = evt || window.event;
     var charCode = (typeof evt.which == "undefined") ? evt.keyCode : evt.which;
     var charStr = String.fromCharCode(charCode);
     if (!charStr.match(/^[0-9]+$/)) {
         evt.preventDefault();
     }
-});
+}
+
+document.getElementById('inputsecs').addEventListener("keypress", allowOnlyNumbers);
 
 // Note that below we often take advantage of the fact that component id's get set directly on the "window" global,
 // and we can therefore use them directly as variables, e.g. an id of "component" becomes window["component"] or
