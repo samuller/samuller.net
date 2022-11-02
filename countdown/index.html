@@ -31,34 +31,45 @@ style: no_nav
       style="width: 5em; padding: 2px">
   </div>
 
-  <div id="formsound" style="display: flex; flex-direction: column;" hidden>
-    <label for="inp_voice">Voice:</label>
-    <span>
-        <select type="range" id="inp_voice" name="inp_voice"
-            onchange="MediaControls.setVoice(this)">
-        </select>
-    </span>
+  <div id="formsound" style="width: 60%; display: flex; flex-direction: column;" class="flexspans" hidden>
+    <details open style="display: flex; flex-direction: column;" class="flexspans">
+      <summary>Configure voice sound</summary>
+      
+      <label for="inp_voice">Voice:</label>
+      <span>
+          <select type="range" id="inp_voice" name="inp_voice"
+              onchange="MediaControls.setVoice(this)">
+              <option value="" selected>Default</option>
+          </select>
+      </span>
 
-    <label for="inp_volume">Volume:</label>
-    <span>
-        <input type="range" id="inp_volume" name="inp_volume" min="0" max="100" value="50"
-            oninput="MediaControls.setVolume(this)">
-        <output>50</output>
-    </span>
+      <label for="inp_volume">Volume:</label>
+      <span>
+          <input type="range" id="inp_volume" name="inp_volume" min="0" max="100" value="50"
+              oninput="MediaControls.setVolume(this)" onchange="console.log('volume = ' + this.value)" onload="console.log('volume = ' + this.value)">
+          <output>50</output>
+      </span>
 
-    <label for="inp_pitch">Pitch:</label>
-    <span>
-        <input type="range" id="inp_pitch" name="inp_pitch" min="0" max="100" value="50"
-            oninput="MediaControls.setPitch(this)">
-        <output>50</output>
-    </span>
+      <label for="inp_pitch">Pitch:</label>
+      <span>
+          <input type="range" id="inp_pitch" name="inp_pitch" min="0" max="100" value="50"
+              oninput="MediaControls.setPitch(this)">
+          <output>50</output>
+      </span>
 
-    <label for="inp_rate">Rate:</label>
-    <span>
-        <input type="range" id="inp_rate" name="inp_rate" min="0" max="100" value="50"
-            oninput="MediaControls.setRate(this)">
-        <output>50</output>
-    </span>
+      <label for="inp_rate">Rate:</label>
+      <span>
+          <input type="range" id="inp_rate" name="inp_rate" min="0" max="100" value="50"
+              oninput="MediaControls.setRate(this)">
+          <output>50</output>
+      </span>
+    </details>
+
+    <details>
+      <summary>Customise voice alerts</summary>
+
+      <div id="list-alerts-state" style="display: grid; grid-template-columns: auto auto 1fr; row-gap: 2px;"></div>
+    </details>
   </div>
 
 </div>

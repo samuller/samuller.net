@@ -80,6 +80,15 @@ function speak(message) {
     window.speechSynthesis.speak(speech);
 }
 
+let alertList = document.getElementById("list-alerts-state");
+for (const [key, value] of Object.entries(_lang)) {
+    alertList.insertAdjacentHTML("beforeend",
+        `<input type="checkbox" id="state_${key.toLowerCase()}_check" checked disabled />
+        <label for="state_${key.toLowerCase()}_check">${key}:&nbsp;</label>
+        <input type="text" id="state_${key.toLowerCase()}_text" value="${value}" style="flex: 1" oninput="_lang['${key}'] = this.value">`
+    );
+}
+
 /**
  * WebComponent/CustomElement class for countdown timer.
  */
