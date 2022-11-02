@@ -33,6 +33,7 @@ function checkVoices() {
         btnaudioicon.classList.add("fa-solid", "fa-volume-high");
 
         inp_voice.innerHTML = "";
+        inp_voice.options.add(new Option("Default voice", ""));
         for (let i = 0; i < voices.length; i++) {
             let name = voices[i].name;
             let lang = voices[i].lang;
