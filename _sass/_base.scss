@@ -332,6 +332,21 @@ input[type='text'], input[type='email'], input[type='submit'], input[type='range
     outline: none;
 }
 
+input[type='checkbox'] {
+    filter: brightness(60%) saturate(100) hue-rotate(290deg);
+    width: 20px;
+    height: 20px;
+    accent-color: var(--accent-color);
+}
+
+input[type='checkbox']:checked {
+    filter: brightness(100%);
+}
+
+input[type='range'] {
+    accent-color: var(--accent-color);
+}
+
 .leave {
 	display: none;
 }
