@@ -139,6 +139,7 @@ class CountdownTimer extends HTMLElement {
      * List all attributes to observe for changes.
      */
     static get observedAttributes () {
+        // unobserved attributes: onstart, onpause, onresume, onreset, onend, onrender
         return ["secs"];
     }
 
@@ -175,16 +176,19 @@ class CountdownTimer extends HTMLElement {
         if(!silent) {
             speak(_lang.onStart);
         }
+        eval(this.getAttribute('onstart'));
     }
 
     pause() {
         this.clearTimer();
         speak(_lang.onPause);
+        eval(this.getAttribute('onpause'));
     }
 
     resume() {
         this.start(true);
         speak(_lang.onResume);
+        eval(this.getAttribute('onresume'));
     }
 
     reset() {
@@ -197,6 +201,7 @@ class CountdownTimer extends HTMLElement {
         // TODO: move out into onreset attribute
         btnplayicon.classList.add("fa-play");
         btnplayicon.classList.remove("fa-pause");
+        eval(this.getAttribute('onreset'));
     }
 
     startOrResume() {
@@ -229,6 +234,7 @@ class CountdownTimer extends HTMLElement {
                 varUpdated = true;
                 if (this.sec == 0) {
                     speak(_lang.onEnd);
+                    eval(this.getAttribute('onend'));
                 } else {
                     speak(`${this.sec}`);
                 }
@@ -256,6 +262,7 @@ class CountdownTimer extends HTMLElement {
         this.innerHTML = `<span>${hms[0]}</span><span>${hms[1]}</span><span>${hms[2]}</span>`;
         // Show current timer in page/tab title (won't work for multiple timers on same page)
         document.title = hhmmss;
+        eval(this.getAttribute('onrender'));
     }
 
 }
@@ -291,15 +298,19 @@ function clickSoundToggle() {
     btnAudio.setAttribute('shadow_under', !formsound.hidden);
 }
 
-function clickPlayToggle() {
-    let active = countdown0.toggle();
-    if (active) {
+function updatePlayToggle(isPlaying) {
+    if (isPlaying) {
         btnplayicon.classList.add("fa-pause");
         btnplayicon.classList.remove("fa-play");
     } else {
         btnplayicon.classList.add("fa-play");
         btnplayicon.classList.remove("fa-pause");
     }
+}
+
+function clickPlayToggle() {
+    let active = countdown0.toggle();
+    updatePlayToggle(active);
 }
 
 function clickReset() {

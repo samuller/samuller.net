@@ -7,7 +7,8 @@ style: no_nav
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
 <div style="margin: 1em; display: flex; flex-direction: column; gap: 1em; align-items: center; justify-content: center;">
-  <app-countdown id="countdown0" secs="10" style="display: block; text-align: center; flex: 1; font-size: 50px;"></app-countdown>
+  <app-countdown id="countdown0" secs="10" style="display: block; text-align: center; flex: 1; font-size: 50px;"
+    onstart="updatePlayToggle(true)" onresume="updatePlayToggle(true)" onpause="updatePlayToggle(false)"></app-countdown>
   <div style="flex: 1; display: flex; gap: 10px">
     <button id="btnAudio" class="media-controls" onclick="clickSoundToggle()">
       <!--<i class="fa-solid fa-volume-off"></i>-->
