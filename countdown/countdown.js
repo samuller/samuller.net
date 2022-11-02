@@ -67,6 +67,8 @@ const _lang = {
     onEnd: "Countdown completed.",
     onPause: "Pause",
     onResume: "Continuing countdown",
+    onEveryXSec: "10",
+    onLastXSec: "5",
 };
 
 function speak(message) {
@@ -235,7 +237,7 @@ class CountdownTimer extends HTMLElement {
                 if (this.sec == 0) {
                     speak(_lang.onEnd);
                     eval(this.getAttribute('onend'));
-                } else {
+                } else if ((this.sec % parseInt(_lang.onEveryXSec) == 0) || (this.sec <= parseInt(_lang.onLastXSec))){
                     speak(`${this.sec}`);
                 }
             } else {
