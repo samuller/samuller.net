@@ -8,21 +8,23 @@ style: no_nav
 
 <div style="margin: 1em; display: flex; flex-direction: column; gap: 1em; align-items: center; justify-content: center;">
   <app-countdown id="countdown0" secs="10" style="display: block; text-align: center; flex: 1; font-size: 50px;"
-    onstart="MediaControls.updatePlayToggle(true)" onresume="MediaControls.updatePlayToggle(true)" onpause="MediaControls.updatePlayToggle(false)"></app-countdown>
+    onstart="controls0.updatePlayToggle(true)"
+    onresume="controls0.updatePlayToggle(true)"
+    onpause="controls0.updatePlayToggle(false)"></app-countdown>
   <!-- Media controls & configs -->
   <div style="flex: 1; display: flex; gap: 10px">
-    <button id="btnAudio" class="media-controls" onclick="MediaControls.clickSoundToggle()">
+    <button id="btnAudio" class="media-controls" onclick="controls0.clickSoundToggle()">
       <!--<i class="fa-solid fa-volume-off"></i>-->
       <i id="btnaudioicon" class="fa-solid fa-volume-high"></i>
     </button>
-    <button id="btnplay" class="media-controls" onclick="MediaControls.clickPlayToggle()">
+    <button id="btnplay" class="media-controls" onclick="controls0.clickPlayToggle()">
       <i id="btnplayicon" class="fa-solid fa-play"></i>
       <!-- <i class="fa-solid fa-pause"></i> -->
     </button>
-    <button id="btnreset" class="media-controls" onclick="MediaControls.clickReset()">
+    <button id="btnreset" class="media-controls" onclick="controls0.clickReset()">
       <i class="fa-solid fa-rotate-left"></i>
     </button>
-    <button id="btnset" class="media-controls" shadow="false" onclick="MediaControls.clickSet();">
+    <button id="btnset" class="media-controls" shadow="false" onclick="controls0.clickSet();">
       Set
     </button>
   </div>
@@ -40,7 +42,7 @@ style: no_nav
       <label for="inp_voice">Voice:</label>
       <span>
           <select type="range" id="inp_voice" name="inp_voice"
-              onchange="MediaControls.setVoice(this)">
+              onchange="controls0.setVoice(this)">
               <option value="" selected>Default</option>
           </select>
       </span>
@@ -48,21 +50,21 @@ style: no_nav
       <label for="inp_volume">Volume:</label>
       <span>
           <input type="range" id="inp_volume" name="inp_volume" min="0" max="100" value="50"
-              oninput="MediaControls.setVolume(this)" onchange="console.log('volume = ' + this.value)" onload="console.log('volume = ' + this.value)">
+              oninput="controls0.setVolume(this)" onchange="console.log('volume = ' + this.value)" onload="console.log('volume = ' + this.value)">
           <output>50</output>
       </span>
 
       <label for="inp_pitch">Pitch:</label>
       <span>
           <input type="range" id="inp_pitch" name="inp_pitch" min="0" max="100" value="50"
-              oninput="MediaControls.setPitch(this)">
+              oninput="controls0.setPitch(this)">
           <output>50</output>
       </span>
 
       <label for="inp_rate">Rate:</label>
       <span>
           <input type="range" id="inp_rate" name="inp_rate" min="0" max="100" value="50"
-              oninput="MediaControls.setRate(this)">
+              oninput="controls0.setRate(this)">
           <output>50</output>
       </span>
     </details>

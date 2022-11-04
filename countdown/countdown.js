@@ -285,6 +285,11 @@ document.getElementById('inputsecs').addEventListener("keypress", allowOnlyNumbe
 
 class MediaControls {
 
+    constructor (countdownComponent, speechUtterance) {
+        this.countdownComponent = countdownComponent;
+        this.speechUtterance = speechUtterance;
+    }
+
     static constructAlertList(elementId) {
         let alertList = document.getElementById(elementId);
         for (const [key, value] of Object.entries(_lang)) {
@@ -296,23 +301,23 @@ class MediaControls {
         }
     }
 
-    static setVoice(element) {
-        speech.voice = voices[element.value];
+    setVoice(element) {
+        this.speechUtterance.voice = voices[element.value];
     }
 
-    static setVolume(element) {
+    setVolume(element) {
         element.nextElementSibling.value = element.value;
-        speech.volume = element.value / 100.0;
+        this.speechUtterance.volume = element.value / 100.0;
     }
 
-    static setPitch(element) {
+    setPitch(element) {
         element.nextElementSibling.value = element.value;
-        speech.pitch = element.value / 100.0;
+        this.speechUtterance.pitch = element.value / 100.0;
     }
 
-    static setRate(element) {
+    setRate(element) {
         element.nextElementSibling.value = element.value;
-        speech.rate = element.value / 100.0;
+        this.speechUtterance.rate = element.value / 100.0;
     }
 
 
@@ -321,12 +326,12 @@ class MediaControls {
     // window.component which can then be accessed directly as just "component", but only if the name is also a valid
     // parse-able variable name (i.e. no dashes which would parse to minuses).
 
-    static clickSoundToggle() {
+    clickSoundToggle() {
         formsound.hidden = !formsound.hidden;
         btnAudio.setAttribute('shadow_under', !formsound.hidden);
     }
 
-    static updatePlayToggle(isPlaying) {
+    updatePlayToggle(isPlaying) {
         if (isPlaying) {
             btnplayicon.classList.add("fa-pause");
             btnplayicon.classList.remove("fa-play");
@@ -336,18 +341,18 @@ class MediaControls {
         }
     }
 
-    static clickPlayToggle() {
-        let active = countdown0.toggle();
-        updatePlayToggle(active);
+    clickPlayToggle() {
+        let active = this.countdownComponent.toggle();
+        this.updatePlayToggle(active);
     }
 
-    static clickReset() {
-        countdown0.reset();
+    clickReset() {
+        this.countdownComponent.reset();
         btnplayicon.classList.add("fa-play");
         btnplayicon.classList.remove("fa-pause");
     }
 
-    static clickSet() {
+    clickSet() {
         // Toggle input section being shown (using the "hidden" boolean attribute)
         formsecs.hidden = !formsecs.hidden;
         // Toggle button shadow to make it look clickable (to indicate that clicking again does something)
@@ -356,12 +361,13 @@ class MediaControls {
         // After closing input section
         if (formsecs.hidden) {
             // Set countdown attribute
-            countdown0.setAttribute('secs', inputsecs.value);
+            this.countdownComponent.setAttribute('secs', inputsecs.value);
         }
     }
 
 }
 
 
+var controls0 = new MediaControls(countdown0, speech);
 MediaControls.constructAlertList("list-alerts-state");
 
