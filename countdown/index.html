@@ -8,20 +8,21 @@ style: no_nav
 
 <div style="margin: 1em; display: flex; flex-direction: column; gap: 1em; align-items: center; justify-content: center;">
   <app-countdown id="countdown0" secs="10" style="display: block; text-align: center; flex: 1; font-size: 50px;"
-    onstart="updatePlayToggle(true)" onresume="updatePlayToggle(true)" onpause="updatePlayToggle(false)"></app-countdown>
+    onstart="MediaControls.updatePlayToggle(true)" onresume="MediaControls.updatePlayToggle(true)" onpause="MediaControls.updatePlayToggle(false)"></app-countdown>
+  <!-- Media controls & configs -->
   <div style="flex: 1; display: flex; gap: 10px">
-    <button id="btnAudio" class="media-controls" onclick="clickSoundToggle()">
+    <button id="btnAudio" class="media-controls" onclick="MediaControls.clickSoundToggle()">
       <!--<i class="fa-solid fa-volume-off"></i>-->
       <i id="btnaudioicon" class="fa-solid fa-volume-high"></i>
     </button>
-    <button id="btnplay" class="media-controls" onclick="clickPlayToggle()">
+    <button id="btnplay" class="media-controls" onclick="MediaControls.clickPlayToggle()">
       <i id="btnplayicon" class="fa-solid fa-play"></i>
       <!-- <i class="fa-solid fa-pause"></i> -->
     </button>
-    <button id="btnreset" class="media-controls" onclick="clickReset()">
+    <button id="btnreset" class="media-controls" onclick="MediaControls.clickReset()">
       <i class="fa-solid fa-rotate-left"></i>
     </button>
-    <button id="btnset" class="media-controls" shadow="false" onclick="clickSet();">
+    <button id="btnset" class="media-controls" shadow="false" onclick="MediaControls.clickSet();">
       Set
     </button>
   </div>

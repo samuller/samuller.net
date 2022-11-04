@@ -290,49 +290,6 @@ function allowOnlyNumbers(evt) {
 
 document.getElementById('inputsecs').addEventListener("keypress", allowOnlyNumbers);
 
-// Note that below we often take advantage of the fact that component id's get set directly on the "window" global,
-// and we can therefore use them directly as variables, e.g. an id of "component" becomes window["component"] or
-// window.component which can then be accessed directly as just "component", but only if the name is also a valid
-// parse-able variable name (i.e. no dashes which would parse to minuses).
-
-function clickSoundToggle() {
-    formsound.hidden = !formsound.hidden;
-    btnAudio.setAttribute('shadow_under', !formsound.hidden);
-}
-
-function updatePlayToggle(isPlaying) {
-    if (isPlaying) {
-        btnplayicon.classList.add("fa-pause");
-        btnplayicon.classList.remove("fa-play");
-    } else {
-        btnplayicon.classList.add("fa-play");
-        btnplayicon.classList.remove("fa-pause");
-    }
-}
-
-function clickPlayToggle() {
-    let active = countdown0.toggle();
-    updatePlayToggle(active);
-}
-
-function clickReset() {
-    countdown0.reset();
-    btnplayicon.classList.add("fa-play");
-    btnplayicon.classList.remove("fa-pause");
-}
-
-function clickSet() {
-    // Toggle input section being shown (using the "hidden" boolean attribute)
-    formsecs.hidden = !formsecs.hidden;
-    // Toggle button shadow to make it look clickable (to indicate that clicking again does something)
-    // btnset.setAttribute('shadow', !(btnset.getAttribute('shadow') === 'true'));
-    btnset.setAttribute('shadow', !formsecs.hidden);
-    // After closing input section
-    if (formsecs.hidden) {
-        // Set countdown attribute
-        countdown0.setAttribute('secs', inputsecs.value);
-    }
-}
 
 class MediaControls {
 
@@ -353,6 +310,51 @@ class MediaControls {
     static setRate(element) {
         element.nextElementSibling.value = element.value;
         speech.rate = element.value / 100.0;
+    }
+
+
+    // Note that below we often take advantage of the fact that component id's get set directly on the "window" global,
+    // and we can therefore use them directly as variables, e.g. an id of "component" becomes window["component"] or
+    // window.component which can then be accessed directly as just "component", but only if the name is also a valid
+    // parse-able variable name (i.e. no dashes which would parse to minuses).
+
+    static clickSoundToggle() {
+        formsound.hidden = !formsound.hidden;
+        btnAudio.setAttribute('shadow_under', !formsound.hidden);
+    }
+
+    static updatePlayToggle(isPlaying) {
+        if (isPlaying) {
+            btnplayicon.classList.add("fa-pause");
+            btnplayicon.classList.remove("fa-play");
+        } else {
+            btnplayicon.classList.add("fa-play");
+            btnplayicon.classList.remove("fa-pause");
+        }
+    }
+
+    static clickPlayToggle() {
+        let active = countdown0.toggle();
+        updatePlayToggle(active);
+    }
+
+    static clickReset() {
+        countdown0.reset();
+        btnplayicon.classList.add("fa-play");
+        btnplayicon.classList.remove("fa-pause");
+    }
+
+    static clickSet() {
+        // Toggle input section being shown (using the "hidden" boolean attribute)
+        formsecs.hidden = !formsecs.hidden;
+        // Toggle button shadow to make it look clickable (to indicate that clicking again does something)
+        // btnset.setAttribute('shadow', !(btnset.getAttribute('shadow') === 'true'));
+        btnset.setAttribute('shadow', !formsecs.hidden);
+        // After closing input section
+        if (formsecs.hidden) {
+            // Set countdown attribute
+            countdown0.setAttribute('secs', inputsecs.value);
+        }
     }
 
 }
