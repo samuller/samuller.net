@@ -82,14 +82,6 @@ function speak(message) {
     window.speechSynthesis.speak(speech);
 }
 
-let alertList = document.getElementById("list-alerts-state");
-for (const [key, value] of Object.entries(_lang)) {
-    alertList.insertAdjacentHTML("beforeend",
-        `<input type="checkbox" id="state_${key.toLowerCase()}_check" checked disabled />
-        <label for="state_${key.toLowerCase()}_check">${key}:&nbsp;</label>
-        <input type="text" id="state_${key.toLowerCase()}_text" value="${value}" style="flex: 1" oninput="_lang['${key}'] = this.value">`
-    );
-}
 
 /**
  * WebComponent/CustomElement class for countdown timer.
@@ -116,7 +108,7 @@ class CountdownTimer extends HTMLElement {
         // Need to force the next update to happen when we externally alter countdownSec
         // Start it with true to update on initial page load
         this.forceNextUpdate = true;
-
+        // Javascript setInterval timer used to trigger code at intervals.
         this.timer = null;
 
         this.render();
@@ -293,6 +285,17 @@ document.getElementById('inputsecs').addEventListener("keypress", allowOnlyNumbe
 
 class MediaControls {
 
+    static constructAlertList(elementId) {
+        let alertList = document.getElementById(elementId);
+        for (const [key, value] of Object.entries(_lang)) {
+            alertList.insertAdjacentHTML("beforeend",
+                `<input type="checkbox" id="state_${key.toLowerCase()}_check" checked disabled />
+                <label for="state_${key.toLowerCase()}_check">${key}:&nbsp;</label>
+                <input type="text" id="state_${key.toLowerCase()}_text" value="${value}" style="flex: 1" oninput="_lang['${key}'] = this.value">`
+            );
+        }
+    }
+
     static setVoice(element) {
         speech.voice = voices[element.value];
     }
@@ -358,3 +361,7 @@ class MediaControls {
     }
 
 }
+
+
+MediaControls.constructAlertList("list-alerts-state");
+
