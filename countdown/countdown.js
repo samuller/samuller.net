@@ -1,5 +1,7 @@
 /**
 
+Countdown timer with voice alerts on state change.
+
 To get text-to-speech working with Chromium on Ubuntu:
 ```
 # Check that spd-say is installed and working
@@ -13,10 +15,9 @@ chromium --enable-speech-dispatcher
 */
 
 /**
- * Countdown timer with voice alerts on state change.
+ * Text-to-speech support
  */
 
-/* Text-to-speech support */
 var speechSupported = false;
 var voices = [];
 var speech = null;
@@ -162,26 +163,23 @@ class CountdownTimer extends HTMLElement {
         }
     }
 
-    start(silent = false) {
+    start(triggerEvent = true) {
         this.render();
         // Need bind() otherwise function can't access "this"
         this.timer = setInterval(this.update.bind(this), 1000);
 
-        if(!silent) {
-            speak(_lang.onStart);
+        if (triggerEvent) {
+            eval(this.getAttribute('onstart'));
         }
-        eval(this.getAttribute('onstart'));
     }
 
     pause() {
         this.clearTimer();
-        speak(_lang.onPause);
         eval(this.getAttribute('onpause'));
     }
 
     resume() {
-        this.start(true);
-        speak(_lang.onResume);
+        this.start(false);
         eval(this.getAttribute('onresume'));
     }
 
@@ -226,12 +224,8 @@ class CountdownTimer extends HTMLElement {
             if (this.sec > 0) {
                 this.sec -= 1;
                 varUpdated = true;
-                if (this.sec == 0) {
-                    speak(_lang.onEnd);
-                    eval(this.getAttribute('onend'));
-                } else if ((this.sec % parseInt(_lang.onEveryXSec) == 0) || (this.sec <= parseInt(_lang.onLastXSec))){
-                    speak(`${this.sec}`);
-                }
+                let func = new Function("event", this.getAttribute('onupdate'));
+                func.call(null, { "seconds": this.sec });
             } else {
                 // Stop countdown when it reaches zero
                 this.reset();
@@ -283,6 +277,9 @@ function allowOnlyNumbers(evt) {
 document.getElementById('inputsecs').addEventListener("keypress", allowOnlyNumbers);
 
 
+/**
+ * Media configuration and controls of a countdown component.
+ */
 class MediaControls {
 
     constructor (countdownComponent, speechUtterance) {
@@ -326,11 +323,6 @@ class MediaControls {
     // window.component which can then be accessed directly as just "component", but only if the name is also a valid
     // parse-able variable name (i.e. no dashes which would parse to minuses).
 
-    clickSoundToggle() {
-        formsound.hidden = !formsound.hidden;
-        btnAudio.setAttribute('shadow_under', !formsound.hidden);
-    }
-
     updatePlayToggle(isPlaying) {
         if (isPlaying) {
             btnplayicon.classList.add("fa-pause");
@@ -339,6 +331,11 @@ class MediaControls {
             btnplayicon.classList.add("fa-play");
             btnplayicon.classList.remove("fa-pause");
         }
+    }
+
+    clickSoundToggle() {
+        formsound.hidden = !formsound.hidden;
+        btnAudio.setAttribute('shadow_under', !formsound.hidden);
     }
 
     clickPlayToggle() {
@@ -365,6 +362,33 @@ class MediaControls {
         }
     }
 
+    onStart() {
+        this.updatePlayToggle(true);
+        speak(_lang.onStart);
+    }
+
+    onResume() {
+        this.updatePlayToggle(true);
+        speak(_lang.onResume);
+    }
+
+    onPause() {
+        this.updatePlayToggle(false);
+        speak(_lang.onPause);
+    }
+
+    onReset() {
+
+    }
+
+    onUpdate(secondsLeft) {
+        console.log("onUpdate", secondsLeft);
+        if (secondsLeft == 0) {
+            speak(_lang.onEnd);
+        } else if ((secondsLeft % parseInt(_lang.onEveryXSec) == 0) || (secondsLeft <= parseInt(_lang.onLastXSec))){
+            speak(`${secondsLeft}`);
+        }
+    }
 }
 
 

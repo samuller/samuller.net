@@ -8,9 +8,10 @@ style: no_nav
 
 <div style="margin: 1em; display: flex; flex-direction: column; gap: 1em; align-items: center; justify-content: center;">
   <app-countdown id="countdown0" secs="10" style="display: block; text-align: center; flex: 1; font-size: 50px;"
-    onstart="controls0.updatePlayToggle(true)"
-    onresume="controls0.updatePlayToggle(true)"
-    onpause="controls0.updatePlayToggle(false)"></app-countdown>
+    onstart="controls0.onStart()"
+    onresume="controls0.onResume()"
+    onpause="controls0.onPause()"
+    onupdate="controls0.onUpdate(event.seconds)"></app-countdown>
   <!-- Media controls & configs -->
   <div style="flex: 1; display: flex; gap: 10px">
     <button id="btnAudio" class="media-controls" onclick="controls0.clickSoundToggle()">
