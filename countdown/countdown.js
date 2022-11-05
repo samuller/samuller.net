@@ -14,74 +14,7 @@ chromium --enable-speech-dispatcher
 
 */
 
-/**
- * Text-to-speech support
- */
 
-var speechSupported = false;
-var voices = [];
-var speech = null;
-
-function checkVoices() {
-    speechSupported = false
-    speech = null;
-    voices = window.speechSynthesis.getVoices();
-    if(voices.length > 0) {
-        speechSupported = true;
-        speech = new SpeechSynthesisUtterance();
-        // Update UI elements
-        btnaudioicon.className = "";
-        btnaudioicon.classList.add("fa-solid", "fa-volume-high");
-
-        inp_voice.innerHTML = "";
-        inp_voice.options.add(new Option("Default voice", ""));
-        for (let i = 0; i < voices.length; i++) {
-            let name = voices[i].name;
-            let lang = voices[i].lang;
-            inp_voice.options.add(new Option(`${name} [${lang}]`, i.toString()));
-        }
-        return true;
-    } else {
-        btnaudioicon.className = "";
-        btnaudioicon.classList.add("fa-solid", "fa-volume-xmark");
-        // and gray out button with "text: #666"
-        return false;
-    }
-}
-
-if ('speechSynthesis' in window) {
-    checkVoices();
-    // Support browsers that load voices after a delay (of checking remote servers)
-    speechSynthesis.addEventListener("voiceschanged", () => {
-        let supported = checkVoices();
-        if (supported) {
-            console.log("Text-to-speech voices found after delay!");
-        }
-    });
-} else {
-    console.log("Your browser doesn't support text to speech!");
-}
-
-// Centralise all spoken words
-const _lang = {
-    onStart: "Starting countdown",
-    onEnd: "Countdown completed.",
-    onPause: "Pause",
-    onResume: "Continuing countdown",
-    onEveryXSec: "10",
-    onLastXSec: "5",
-};
-
-function speak(message) {
-    if (!speechSupported) {
-        return;
-    }
-    speech.lang = 'en';
-
-    speech.text = message;
-    window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(speech);
-}
 
 
 /**
@@ -260,21 +193,75 @@ if ('customElements' in window) {
 	customElements.define('app-countdown', CountdownTimer);
 }
 
+
 /**
- * Setup media control components.
+ * Text-to-speech support
  */
 
-// Allow only keyboard events where numbers are typed.
-function allowOnlyNumbers(evt) {
-    evt = evt || window.event;
-    var charCode = (typeof evt.which == "undefined") ? evt.keyCode : evt.which;
-    var charStr = String.fromCharCode(charCode);
-    if (!charStr.match(/^[0-9]+$/)) {
-        evt.preventDefault();
+var speechSupported = false;
+var voices = [];
+var speech = null;
+
+function checkVoices() {
+    speechSupported = false
+    speech = null;
+    voices = window.speechSynthesis.getVoices();
+    if(voices.length > 0) {
+        speechSupported = true;
+        speech = new SpeechSynthesisUtterance();
+        // Update UI elements
+        btnaudioicon.className = "";
+        btnaudioicon.classList.add("fa-solid", "fa-volume-high");
+
+        inp_voice.innerHTML = "";
+        inp_voice.options.add(new Option("Default voice", ""));
+        for (let i = 0; i < voices.length; i++) {
+            let name = voices[i].name;
+            let lang = voices[i].lang;
+            inp_voice.options.add(new Option(`${name} [${lang}]`, i.toString()));
+        }
+        return true;
+    } else {
+        btnaudioicon.className = "";
+        btnaudioicon.classList.add("fa-solid", "fa-volume-xmark");
+        // and gray out button with "text: #666"
+        return false;
     }
 }
 
-document.getElementById('inputsecs').addEventListener("keypress", allowOnlyNumbers);
+if ('speechSynthesis' in window) {
+    checkVoices();
+    // Support browsers that load voices after a delay (of checking remote servers)
+    speechSynthesis.addEventListener("voiceschanged", () => {
+        let supported = checkVoices();
+        if (supported) {
+            console.log("Text-to-speech voices found after delay!");
+        }
+    });
+} else {
+    console.log("Your browser doesn't support text to speech!");
+}
+
+// Centralise all spoken words
+const _lang = {
+    onStart: "Starting countdown",
+    onEnd: "Countdown completed.",
+    onPause: "Pause",
+    onResume: "Continuing countdown",
+    onEveryXSec: "10",
+    onLastXSec: "5",
+};
+
+function speak(message) {
+    if (!speechSupported) {
+        return;
+    }
+    speech.lang = 'en';
+
+    speech.text = message;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(speech);
+}
 
 
 /**
@@ -382,7 +369,6 @@ class MediaControls {
     }
 
     onUpdate(secondsLeft) {
-        console.log("onUpdate", secondsLeft);
         if (secondsLeft == 0) {
             speak(_lang.onEnd);
         } else if ((secondsLeft % parseInt(_lang.onEveryXSec) == 0) || (secondsLeft <= parseInt(_lang.onLastXSec))){
@@ -390,6 +376,23 @@ class MediaControls {
         }
     }
 }
+
+
+/**
+ * Setup media control components.
+ */
+
+// Allow only keyboard events where numbers are typed.
+function allowOnlyNumbers(evt) {
+    evt = evt || window.event;
+    var charCode = (typeof evt.which == "undefined") ? evt.keyCode : evt.which;
+    var charStr = String.fromCharCode(charCode);
+    if (!charStr.match(/^[0-9]+$/)) {
+        evt.preventDefault();
+    }
+}
+
+document.getElementById('inputsecs').addEventListener("keypress", allowOnlyNumbers);
 
 
 var controls0 = new MediaControls(countdown0, speech);
