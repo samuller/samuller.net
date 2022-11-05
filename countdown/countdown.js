@@ -242,27 +242,6 @@ if ('speechSynthesis' in window) {
     console.log("Your browser doesn't support text to speech!");
 }
 
-// Centralise all spoken words
-const _lang = {
-    onStart: "Starting countdown",
-    onEnd: "Countdown completed.",
-    onPause: "Pause",
-    onResume: "Continuing countdown",
-    onEveryXSec: "10",
-    onLastXSec: "5",
-};
-
-function speak(message) {
-    if (!speechSupported) {
-        return;
-    }
-    speech.lang = 'en';
-
-    speech.text = message;
-    window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(speech);
-}
-
 
 /**
  * Media configuration and controls of a countdown component.
@@ -272,17 +251,41 @@ class MediaControls {
     constructor (countdownComponent, speechUtterance) {
         this.countdownComponent = countdownComponent;
         this.speechUtterance = speechUtterance;
+        // Centralise all spoken words
+        this._sounds = {
+            onStart: "Starting countdown",
+            onEnd: "Countdown completed.",
+            onPause: "Pause",
+            onResume: "Continuing countdown",
+            onEveryXSec: "10",
+            onLastXSec: "5",
+        }
     }
 
-    static constructAlertList(elementId) {
+    constructAlertList(elementId) {
         let alertList = document.getElementById(elementId);
-        for (const [key, value] of Object.entries(_lang)) {
+        for (const [key, value] of Object.entries(this._sounds)) {
+            let textInputId = `state_${key.toLowerCase()}_text`;
             alertList.insertAdjacentHTML("beforeend",
                 `<input type="checkbox" id="state_${key.toLowerCase()}_check" checked disabled />
                 <label for="state_${key.toLowerCase()}_check">${key}:&nbsp;</label>
-                <input type="text" id="state_${key.toLowerCase()}_text" value="${value}" style="flex: 1" oninput="_lang['${key}'] = this.value">`
+                <input type="text" id="${textInputId}" value="${value}" style="flex: 1">`
             );
+            document.getElementById(textInputId).addEventListener("input", (event) => {
+                this._sounds[key] = event.target.value;
+            });
         }
+    }
+
+    speak(message) {
+        if (!speechSupported) {
+            return;
+        }
+        this.speechUtterance.lang = 'en';
+    
+        this.speechUtterance.text = message;
+        window.speechSynthesis.cancel();
+        window.speechSynthesis.speak(this.speechUtterance);
     }
 
     setVoice(element) {
@@ -303,7 +306,6 @@ class MediaControls {
         element.nextElementSibling.value = element.value;
         this.speechUtterance.rate = element.value / 100.0;
     }
-
 
     // Note that below we often take advantage of the fact that component id's get set directly on the "window" global,
     // and we can therefore use them directly as variables, e.g. an id of "component" becomes window["component"] or
@@ -351,17 +353,17 @@ class MediaControls {
 
     onStart() {
         this.updatePlayToggle(true);
-        speak(_lang.onStart);
+        this.speak(this._sounds.onStart);
     }
 
     onResume() {
         this.updatePlayToggle(true);
-        speak(_lang.onResume);
+        this.speak(this._sounds.onResume);
     }
 
     onPause() {
         this.updatePlayToggle(false);
-        speak(_lang.onPause);
+        this.speak(this._sounds.onPause);
     }
 
     onReset() {
@@ -370,9 +372,9 @@ class MediaControls {
 
     onUpdate(secondsLeft) {
         if (secondsLeft == 0) {
-            speak(_lang.onEnd);
-        } else if ((secondsLeft % parseInt(_lang.onEveryXSec) == 0) || (secondsLeft <= parseInt(_lang.onLastXSec))){
-            speak(`${secondsLeft}`);
+            this.speak(this._sounds.onEnd);
+        } else if ((secondsLeft % parseInt(this._sounds.onEveryXSec) == 0) || (secondsLeft <= parseInt(this._sounds.onLastXSec))){
+            this.speak(`${secondsLeft}`);
         }
     }
 }
@@ -396,5 +398,5 @@ document.getElementById('inputsecs').addEventListener("keypress", allowOnlyNumbe
 
 
 var controls0 = new MediaControls(countdown0, speech);
-MediaControls.constructAlertList("list-alerts-state");
+controls0.constructAlertList("list-alerts-state");
 
