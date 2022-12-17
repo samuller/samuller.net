@@ -278,31 +278,42 @@ class MediaControls {
     }
 
     speak(message) {
-        if (!speechSupported) {
+        if (!speechSupported || this.speechUtterance === null) {
             return;
         }
         this.speechUtterance.lang = 'en';
-    
         this.speechUtterance.text = message;
         window.speechSynthesis.cancel();
         window.speechSynthesis.speak(this.speechUtterance);
     }
 
     setVoice(element) {
+        if (this.speechUtterance === null) {
+            return;
+        }
         this.speechUtterance.voice = voices[element.value];
     }
 
     setVolume(element) {
+        if (this.speechUtterance === null) {
+            return;
+        }
         element.nextElementSibling.value = element.value;
         this.speechUtterance.volume = element.value / 100.0;
     }
 
     setPitch(element) {
+        if (this.speechUtterance === null) {
+            return;
+        }
         element.nextElementSibling.value = element.value;
         this.speechUtterance.pitch = element.value / 100.0;
     }
 
     setRate(element) {
+        if (this.speechUtterance === null) {
+            return;
+        }
         element.nextElementSibling.value = element.value;
         this.speechUtterance.rate = element.value / 100.0;
     }
