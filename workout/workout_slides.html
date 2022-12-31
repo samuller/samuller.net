@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Workout A/B</title>
+
+  <link rel="icon" type="image/png" href="/img/favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.4.0/dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.4.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.4.0/dist/theme/black.css">
+  <style>
+      :root {
+          --r-heading-text-transform: none;
+      }
+      img { width: 460px; }
+      video { width: 460px; }
+      countdown { font-size: 100px; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown="{{ include.md_file }}"
+                data-separator-vertical="^\n\n">
+      </section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@4.4.0/dist/reveal.js"></script>
+  <script src="https://unpkg.com/reveal.js@4.4.0/plugin/markdown/markdown.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      Reveal.initialize({
+        hash: true,
+        autoSlide: 65000,
+        slideNumber: 'c/t',
+        center: false,
+        plugins: [ RevealMarkdown ],
+                dependencies: [
+                  // { src: 'js/reveal.js-toolbar-0.2.1/toolbar.js' },
+                  // { src: "js/reveal_countdown-master/countdown.js" },
+                  { src: 'https://unpkg.com/reveal.js-toolbar@0.2.1/toolbar.js' },
+                  { src: "https://unpkg.com/reveal.js-countdown@1.1.0/countdown.js" },
+                ],
+                toolbar: {
+                  fullscreen: true,
+                  pause: true,
+                  // 189: (typeof RevealMenu !== "undefined")
+                  captureMenu: false,
+                  capturePlaybackControl: true,
+                }
+      });
+    });
+
+    Reveal.on('ready', event => {
+      // Set all videos to pause/play on click.
+      Array.from(document.getElementsByTagName("video"))
+        .forEach((element) => {
+            element.onclick = function(){ this.paused ? this.play() : this.pause(); }
+        });
+    });
+  </script>
+</body>
+</html>
