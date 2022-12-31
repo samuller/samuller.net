@@ -2,6 +2,7 @@
 layout: page
 title: Workout
 header: Workout
+style: no_nav
 ---
 
 # Athlean-X™ "Perfect Home Workout"
