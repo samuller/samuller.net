@@ -17,10 +17,28 @@
       img { width: 460px; }
       video { width: 460px; }
       countdown { font-size: 100px; }
+      .fsbutton {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 2;
+
+        border: 0;
+        font-size: clamp(1rem, 1vw + 1rem, 2rem);
+        font-weight: bold;
+
+        background: none;
+        color: white;
+        opacity: 0.6;
+      }
+      .fsbutton:hover {
+        opacity: 1;
+      }
   </style>
 </head>
 <body>
   <div class="reveal">
+    <button class="fsbutton" onclick="toggleFullScreen()">⛶</button>
     <div class="slides">
       <section data-markdown="{{ include.md_file }}"
                 data-separator-vertical="^\n\n">
@@ -31,6 +49,14 @@
   <script src="https://unpkg.com/reveal.js@4.4.0/dist/reveal.js"></script>
   <script src="https://unpkg.com/reveal.js@4.4.0/plugin/markdown/markdown.js"></script>
   <script>
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+      } else if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    }
+
     window.addEventListener('load', function () {
       Reveal.initialize({
         hash: true,
