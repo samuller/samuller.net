@@ -13,7 +13,7 @@ Starting in 5...
 Slick Floor Bridge Curl (Single Leg) ⛷️  
 OR Slick Floor Bridge Curl (Dual Leg)
 
-<video data-autoplay src="media/B.1a.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.1a.webm" autoplay loop muted></video>
 
 <countdown time="60" autostart="yes" />
 
@@ -21,7 +21,7 @@ OR Slick Floor Bridge Curl (Dual Leg)
 ## 1b. HINGE
 Long Leg March
 
-<video data-autoplay src="media/B.1b.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.1b.webm" autoplay loop muted></video>
 
 <countdown time="60" autostart="yes" />
 
@@ -29,7 +29,7 @@ Long Leg March
 ## 1c. HINGE
 High Hip Bucks 📦
 
-<video data-autoplay src="media/B.1c.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.1c.webm" autoplay loop muted></video>
 
 <countdown time="60" autostart="yes" />
 
@@ -44,8 +44,8 @@ High Hip Bucks 📦
 Variable Wall Pushups 🧱  
 OR Knee Decline Pushups to Knee Flat Pushups 📦
 
-<video data-autoplay src="media/B.2a-adv.webm" autoplay loop muted></video>
-<video data-autoplay src="media/B.2a-beg.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.2a-adv.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.2a-beg.webm" autoplay loop muted></video>
 
 <countdown time="60" autostart="yes" />
 
@@ -53,8 +53,8 @@ OR Knee Decline Pushups to Knee Flat Pushups 📦
 ## 2b. UPPER PUSH
 Alt. BW Side Lateral Raises (from knees for beginners)
 
-<video data-autoplay src="media/B.2b-adv.webm" autoplay loop muted></video>
-<video data-autoplay src="media/B.2b-beg.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.2b-adv.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.2b-beg.webm" autoplay loop muted></video>
 
 <countdown time="60" autostart="yes" />
 
@@ -62,7 +62,7 @@ Alt. BW Side Lateral Raises (from knees for beginners)
 ## 2c. UPPER PUSH
 Tricep BW Extensions (long head stretch) 📦/🧱
 
-<video data-autoplay src="media/B.2c.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.2c.webm" autoplay loop muted></video>
 
 <countdown time="60" autostart="yes" />
 
@@ -76,7 +76,7 @@ Tricep BW Extensions (long head stretch) 📦/🧱
 ## 3a. LUNGE
 Alt. Crossover Step Ups 📦
 
-<video data-autoplay src="media/B.3a.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.3a.webm" autoplay loop muted></video>
 
 <countdown time="60" autostart="yes" />
 
@@ -84,7 +84,7 @@ Alt. Crossover Step Ups 📦
 ## 3b. LUNGE
 Alt. Reverse Lunges
 
-<video data-autoplay src="media/B.3b.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.3b.webm" autoplay loop muted></video>
 
 <countdown time="60" autostart="yes" />
 
@@ -92,7 +92,7 @@ Alt. Reverse Lunges
 ## 3c. LUNGE
 Split Squat Jumps
 
-<video data-autoplay src="media/B.3c.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.3c.webm" autoplay loop muted></video>
 
 <countdown time="60" autostart="yes" />
 
@@ -107,8 +107,8 @@ Split Squat Jumps
 Chin Ups ⛩️  
 OR Seated Chin Ups 🚧
 
-<video data-autoplay src="media/B.4a-adv.webm" autoplay loop muted></video>
-<video data-autoplay src="media/B.4a-beg.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.4a-adv.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.4a-beg.webm" autoplay loop muted></video>
 
 <countdown time="60" autostart="yes" />
 
@@ -116,7 +116,7 @@ OR Seated Chin Ups 🚧
 ## 4b. UPPER PULL
 Inverted Rows 🚧
 
-<video data-autoplay src="media/B.4b.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.4b.webm" autoplay loop muted></video>
 
 <countdown time="60" autostart="yes" />
 
@@ -124,7 +124,7 @@ Inverted Rows 🚧
 ## 4c. UPPER PULL
 Back Widows
 
-<video data-autoplay src="media/B.4c.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.4c.webm" autoplay loop muted></video>
 
 <countdown time="60" autostart="yes" />
 
@@ -138,7 +138,7 @@ Back Widows
 ## 5a. ABS
 Ab Halos
 
-<video data-autoplay src="media/B.5a.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.5a.webm" autoplay loop muted></video>
 
 <countdown time="60" autostart="yes" />
 
@@ -146,7 +146,7 @@ Ab Halos
 ## 5b. ABS
 V-Up Tucks
 
-<video data-autoplay src="media/B.5b.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.5b.webm" autoplay loop muted></video>
 
 <countdown time="60" autostart="yes" />
 
@@ -154,7 +154,7 @@ V-Up Tucks
 ## 5c. ABS
 Sit-Up Elbow Thrusts
 
-<video data-autoplay src="media/B.5c.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.5c.webm" autoplay loop muted></video>
 
 <countdown time="60" autostart="yes" />
 
@@ -168,7 +168,7 @@ Sit-Up Elbow Thrusts
 ## 6. CORRECTIVE
 Reverse Hypers
 
-<video data-autoplay src="media/B.6.webm" autoplay loop muted></video>
+<video data-autoplay data-src="media/B.6.webm" autoplay loop muted></video>
 
 <countdown time="60" autostart="yes" />
 
