@@ -96,7 +96,6 @@ MARKDOWN = {
         'markdown.extensions.toc': {},
         'markdown.extensions.attr_list': {},
         'kramdown_ial': {},
-        'liquid_tags': {},
         'math_block_protect': {},
     },
     'output_format': 'html5',

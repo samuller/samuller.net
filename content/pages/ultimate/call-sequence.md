@@ -2,7 +2,7 @@ Title: WFDF Call Sequence
 Template: post
 Category: ultimate sport
 Header: Ultimate
-Style: no_nav no_title_heading ref_toggle
+Style: no_nav no_title_heading
 
 <style type="text/css">
   strong {
@@ -11,7 +11,7 @@ Style: no_nav no_title_heading ref_toggle
 </style>
 
 <div class="no-print">
-{% set hwil = {'text': 'WFDF Call Sequence'} %}{% include "partials/header-with-image-link.html" %}
+{% set hwil = {'text': 'WFDF Call Sequence', 'ref_toggle': True} %}{% include "partials/header-with-image-link.html" %}
 </div>
 
 A quick summary of how calls should be handled on the field when playing Ultimate frisbee according to the 2021 [WFDF rules](https://rules.wfdf.org/).
@@ -34,6 +34,7 @@ A quick summary of how calls should be handled on the field when playing Ultimat
 ## Discussion options
 
 Once a **foul** or **violation** is called, a 'discussion' starts and there are multiple ways to respond. We list the options and give an indication of some types of results, however the exact consequences require the detailed rules:
+
 1. **Uncontested**/no contest/call accepted: if the opposing team does not disagree with the call then they usually just need to correct the issue caused by the foul, e.g.:
     - give possession to fouled player who would've caught disc<span class="ref-link"> [17.2.2]</span>
     - allow defender to make up position<span class="ref-link"> [17.8.2]</span>
@@ -48,6 +49,7 @@ Discussions should be as brief as possible with the preferred outcome being eith
 ## Turnovers during calls
 
 If, after a call is made, the thrower still throws the disc<span class="ref-link"> [16.2.1-16.2.3]</span> and it is *not caught*, it will *often* count as a turnover<span class="ref-link"> [annotations 16.1-16.2]</span>:
+
 - If defense made the call, then the turnover stands because the team that called the foul gained possession<span class="ref-link"> [16.2.4.1, 19.1.6, 19.2.3.1]</span>
 - If offense made the call, then the turnover stands if the foul did not actually affect the turnover<span class="ref-link"> [16.3, 18.1.6, 19.1.6, 19.2.3.1]</span>
 - If the foul affected the throw itself then it is reasonable that the foul affected play and therefore the disc should go back to the thrower<span class="ref-link"> [16.2.4.2.1, 19.2.3.1]</span>

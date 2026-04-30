@@ -2,7 +2,7 @@ Title: WFDF Call Types
 Template: post
 Category: ultimate sport
 Header: Ultimate
-Style: no_nav no_title_heading ref_toggle
+Style: no_nav no_title_heading
 
 <style type="text/css">
   strong {
@@ -10,10 +10,9 @@ Style: no_nav no_title_heading ref_toggle
   }
 </style>
 
-{# "Contact" infraction: 17.6.1.3
-#}
+{# "Contact" infraction: 17.6.1.3 #}
 <div class="no-print">
-{% set hwil = {'text': 'WFDF Call Types', 'img_src': '/img/icon-file-pdf.svg', 'img_alt': 'pdf icon', 'title': 'Download PDF', 'link': '/ultimate/ultimate-wfdf-calls.pdf'} %}{% include "partials/header-with-image-link.html" %}
+{% set hwil = {'text': 'WFDF Call Types', 'img_src': '/img/icon-file-pdf.svg', 'img_alt': 'pdf icon', 'title': 'Download PDF', 'link': '/ultimate/ultimate-wfdf-calls.pdf', 'ref_toggle': True} %}{% include "partials/header-with-image-link.html" %}
 </div>
 
 A quick summary of the common calls that can be made on the field when playing Ultimate frisbee according to the 2021 [WFDF rules](https://rules.wfdf.org/). Relevant rule numbers are stated in <span class="ref-link-desc">square brackets</span> and **bolded** words represent the exact word called on the field.
@@ -23,6 +22,7 @@ A quick summary of the common calls that can be made on the field when playing U
 Infractions are calls that do not stop play<span class="ref-link"> [15.2,18.2.6]</span> (unless contested<span class="ref-link"> [18.1.2, 18.2.9]</span>). The mistake only needs to be corrected in some way, but play continues.
 
 There are only two 'types' of infraction<span class="ref-link"> [15.2]</span>:
+
 - **Travel**<span class="ref-link"> [18.2]</span>: whenever the person catching the disc does not stop as fast as possible, or they change direction after properly catching<span class="ref-link"> [18.2.5.1]</span>, or they establish a pivot point at an invalid position (e.g. out of bounds)<span class="ref-link"> [18.2.5.3]</span> - one exception where they can maintain speed is if they release the disc before taking three steps<span class="ref-link"> [18.2.2.1.2]</span>
 - Marking infractions<span class="ref-link"> [18.1]</span>, of which there are 6 types, are usually due to some action of the defending *marker* against the *thrower*:
     - **Fast count**: counting faster than 1 second intervals or making any other counting mistake (starting count, ordering, etc.)<span class="ref-link"> [18.1.1.1]</span>
