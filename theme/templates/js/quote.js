@@ -26,7 +26,7 @@ function processURL(url) {
     return {quoteIdx: quoteIdx, category: category};
 }
 
-var quoteData = {{ site.data.quotes | jsonify }};
+var quoteData = {{ quotes_data | tojson }};
 var categories = Object.keys(quoteData);
 var data = processURL(new URL(location.href));
 
