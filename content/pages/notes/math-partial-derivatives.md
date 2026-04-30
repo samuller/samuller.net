@@ -25,6 +25,6 @@ $\displaystyle \frac{\partial \mathbf{x}^T\mathbf{a}}{\partial \mathbf{x}} = \ma
 
 $\displaystyle \frac{\partial \mathbf{x}^T\mathbf{A}\mathbf{x}}{\partial \mathbf{x}} = 2\mathbf{A}\mathbf{x}$ if $\mathbf{A}$ is symmetric
 
-$\displaystyle \frac{\partial \|\mathbf{X}\|}{\partial \mathbf{X}} = \|\mathbf{X}\|(\mathbf{X}^{-1})^T$
+$\displaystyle \frac{\partial |\mathbf{X}|}{\partial \mathbf{X}} = |\mathbf{X}|(\mathbf{X}^{-1})^T$
 
-$\displaystyle \frac{\partial \ln\|\mathbf{X}\|}{\partial \mathbf{X}} = (\mathbf{X}^{-1})^T$
+$\displaystyle \frac{\partial \ln|\mathbf{X}|}{\partial \mathbf{X}} = (\mathbf{X}^{-1})^T$

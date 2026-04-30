@@ -1,8 +1,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if article is defined %}{{ article.title }} | {% elif page is defined and page.title %}{{ page.title }} | {% endif %}{{ SITENAME }}{% if SITESUBTITLE and not (page or article) %} | {{ SITESUBTITLE }}{% endif %}</title>
-  <meta name="description" content="{% if article is defined %}{{ article.summary | striptags | truncate(160) }}{% elif page is defined and page.summary %}{{ page.summary | striptags | truncate(160) }}{% else %}{{ SITESUBTITLE }}{% endif %}">
+  <title>{% if article is defined %}{{ article.title }} | {% elif page is defined and page.title %}{{ page.title }} | {% endif %}{{ SITENAME }}{% if SITESUBTITLE and not ((article is defined and article.title) or (page is defined and page.title)) %} | {{ SITESUBTITLE }}{% endif %}</title>
+  <meta name="description" content="{% if article is defined %}{{ article.summary | strip_style_blocks | striptags | truncate(160) }}{% elif page is defined and page.summary %}{{ page.summary | strip_style_blocks | striptags | truncate(160) }}{% else %}{{ SITESUBTITLE }}{% endif %}">
   {% if SITEURL and (article is defined or page is defined) %}
   <link rel="canonical" href="{{ SITEURL }}/{{ article.url if article is defined else page.url }}">
   {% endif %}

@@ -1,4 +1,4 @@
-Title:
+Title: Welcome
 Save_as: index.html
 Url:
 Template: page

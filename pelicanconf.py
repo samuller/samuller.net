@@ -1,5 +1,6 @@
 import csv
 import os
+import re
 import sys
 from datetime import datetime
 
@@ -82,6 +83,13 @@ def _load_quotes():
                 with open(os.path.join(data_dir, fname), newline='', encoding='utf-8') as f:
                     quotes[fname[:-4]] = list(csv.DictReader(f, delimiter='\t'))
     return quotes
+
+def _strip_style_blocks(text):
+    return re.sub(r'<style[^>]*>.*?</style>', '', text, flags=re.DOTALL | re.IGNORECASE)
+
+JINJA_FILTERS = {
+    'strip_style_blocks': _strip_style_blocks,
+}
 
 JINJA_GLOBALS = {
     'now': datetime.now,
