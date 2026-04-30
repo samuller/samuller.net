@@ -22,7 +22,7 @@ dl, dd, ol, ul, figure {
  */
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: rgb(var(--text-color-rgb));
+    color: #{"rgb(var(--text-color-rgb))"};
 
     border-top: 4px solid #000;
     background: var(--background-image); //, linear-gradient(to right, #71B280, #134E5E);

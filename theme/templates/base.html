@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+{% include "partials/head.html" %}
+
+<body>
+
+  <div class="page-wrapper">
+    {% include "partials/header.html" %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+
+    {% include "partials/footer.html" %}
+  </div>
+
+</body>
+
+</html>

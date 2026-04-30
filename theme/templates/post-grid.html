@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+{% set obj = article if article is defined else page %}
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  {% if 'no_title_heading' not in (obj.style | default('')) %}
+  <header class="post-header">
+    <h1 class="post-title no-print" itemprop="name headline">{{ obj.title }}</h1>
+  </header>
+  {% endif %}
+
+  <div class="post-content non-prose" itemprop="articleBody"
+       style="display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 0.5em; row-gap: 0.5em;">
+    {{ obj.content }}
+  </div>
+
+</article>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ["\\(","\\)"]],
+    processEscapes: true
+  }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+{% endblock %}

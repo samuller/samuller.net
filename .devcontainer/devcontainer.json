@@ -1,0 +1,21 @@
+{
+    "name": "samuller.net-dev",
+
+    // "image": "ubuntu:24.04",
+    // "remoteUser": "ubuntu",
+    "image": "ghcr.io/astral-sh/uv:0.11.8-trixie",
+    "remoteUser": "root",
+
+    "customizations": {
+        "vscode": {
+            "settings": {
+            },
+            // IDs of extensions to install when the container is created.
+            "extensions": [
+            ]
+        }
+    },
+    // Run commands after the container is created. Add shell colours.
+    "postCreateCommand": "echo 'export PS1=\"\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ \"\\nalias ls=\"ls --color=auto\"' >> /root/.bashrc"
+	// "postCreateCommand": "curl -fsSL https://claude.ai/install.sh | bash"
+}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div id="inCase">
+  <blockquote>
+  <span>You know that if it is not broken, it just does not have enough features...</span>
+  <cite>A browser without Javascript</cite>
+  </blockquote>
+  <br/>
+</div>
+
+{% raw %}
+<div id="quoteApp" style="display: none" v-cloak>
+  <div style="text-align: center;">
+    <a href="javascript:void(0)" v-on:click="prevQuote" style="float: left;">prev</a>
+    <span>{{ quoteNr }}</span>/<span>{{ categorySize }}</span>
+    <a href="javascript:void(0)" v-on:click="nextQuote" style="float: right;">next</a>
+  </div>
+  <blockquote>
+  <span v-html="currQuote.quote"></span>
+  <cite v-if="currQuote.source">{{ currQuote.source }}
+    <span v-if="currQuote.paraphrase"> [<a v-bind:title="currQuote.paraphrase" class="tooltip">paraphrased</a>]</span>
+  </cite>
+  </blockquote>
+  <br/>
+  <div class="align-center"><a href="javascript:void(0)" v-on:click="randomCategory" id="category">{{ category }}</a></div>
+</div>
+{% endraw %}
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="/js/quote.js"></script>
+
+{% endblock %}
