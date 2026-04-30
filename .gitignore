@@ -3,3 +3,5 @@ _site
 .cache
 .sass-cache
 .jekyll-metadata
+.venv/
+output/
