@@ -62,7 +62,9 @@ TEMPLATE_PAGES = {
     'workout/b.html':     'workout/b.html',
 }
 
-PLUGINS = ['pelican.plugins.sitemap', 'jinja2content']
+PLUGINS = ['pelican.plugins.sitemap', 'jinja2content', 'pelican.plugins.render_math']
+
+MATH_JAX = {'auto_insert': False}
 
 SITEMAP = {
     'format': 'xml',
@@ -97,6 +99,7 @@ MARKDOWN = {
         'markdown.extensions.attr_list': {},
         'kramdown_ial': {},
         'liquid_tags': {},
+        'math_block_protect': {},
     },
     'output_format': 'html5',
 }
