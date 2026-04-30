@@ -11,7 +11,7 @@ Style: no_nav no_title_heading ref_toggle
 </style>
 
 <div class="no-print">
-{% include header-with-image-link.html text="WFDF Call Sequence" %}
+{% set hwil = {'text': 'WFDF Call Sequence'} %}{% include "partials/header-with-image-link.html" %}
 </div>
 
 A quick summary of how calls should be handled on the field when playing Ultimate frisbee according to the 2021 [WFDF rules](https://rules.wfdf.org/).

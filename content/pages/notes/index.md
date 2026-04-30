@@ -4,8 +4,7 @@ Save_as: notes/index.html
 Url: notes/
 Template: page
 
-{% comment %}
-<!--
+{#
 Arithmetic: decimals to fractions, values for log, trig, geometries, product of negatives, absolute values
 Elementary Algebra: simplifying equations, inequalities, long division
 Series
@@ -14,8 +13,7 @@ Linear algebra
 Partial differential equations
 
 Eigenvalues, SVD
--->
-{% endcomment %}
+#}
 
 # Mathematics
 

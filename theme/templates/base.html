@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 
-  {% include head.html %}
+{% include "partials/head.html" %}
 
-  <body>
+<body>
 
-    <div class="page-wrapper">
-      {% include header.html %}
+  <div class="page-wrapper">
+    {% include "partials/header.html" %}
 
-      <div class="page-content">
-        <div class="wrapper">      
-          {{ content }}
-        </div>
+    <div class="page-content">
+      <div class="wrapper">
+        {% block content %}{% endblock %}
       </div>
-
-      {% include footer.html %}
     </div>
 
-  </body>
+    {% include "partials/footer.html" %}
+  </div>
+
+</body>
 
 </html>

@@ -2,17 +2,22 @@
 
   <div class="wrapper">
 
-    {% assign site_section = page.url | split: "/" | slice: 1 | first %}
+    {% set current_obj = article if article is defined else (page if page is defined else none) %}
+    {% set page_url = current_obj.url if current_obj else (output_file if output_file is defined else '') %}
+    {% set site_section = '/' + page_url.strip('/').split('/')[0] + '/' %}
+    {% set page_header = current_obj.header if current_obj and current_obj.header is defined else '' %}
+    {% set page_style = current_obj.style if current_obj and current_obj.style is defined else '' %}
+
     <div class="site-title">
-    {% if page.header %}
-    {{ page.header | capitalize }}
-    <div class="sub-title only-print">{{ page.title }}</div>
+    {% if page_header %}
+    {{ page_header | capitalize }}
+    <div class="sub-title only-print">{{ current_obj.title }}</div>
     {% else %}
-    <a class="nolink" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <a class="nolink" href="/">{{ SITENAME }}</a>
     {% endif %}
     </div>
 
-    {% unless page.style contains 'no_nav' %}
+    {% if 'no_nav' not in page_style %}
     <nav class="site-nav">
       <a href="#" class="menu-icon" aria-label="Menu" style="display: none">
         <svg viewBox="0 0 18 15">
@@ -22,20 +27,18 @@
         </svg>
       </a>
 
-      {% assign site_section_url = site_section | prepend: "/" | append: "/" | replace: "//", "/" %}
       <div class="trigger no-print">
-        {% for nav_page in site.nav_links %}
-          {% if nav_page.title %}
-            {% assign style = "page-link" %}
-            {% if site_section_url == nav_page.url %}
-              {% assign style = "page-link active" %}
-            {% endif %}
-            <a class="{{ style }}" href="{{ nav_page.url | prepend: site.baseurl }}">{{ nav_page.title }}</a>
+        {% for title, url in MENUITEMS %}
+          {% set section_url = '/' + page_url.strip('/').split('/')[0] + '/' %}
+          {% if section_url == url or (url == '/' and page_url in ['', '/']) %}
+            <a class="page-link active" href="{{ url }}">{{ title }}</a>
+          {% else %}
+            <a class="page-link" href="{{ url }}">{{ title }}</a>
           {% endif %}
         {% endfor %}
       </div>
     </nav>
-    {% endunless %}
+    {% endif %}
   </div>
 
 </header>

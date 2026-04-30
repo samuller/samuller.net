@@ -3,12 +3,12 @@ Template: post
 Category: math
 Header: mathematics
 
+{#
 Rational
 $\frac{a}{b}$ where $\\{ a,b \in \mathbb{Z}, b \neq 0 \\}$
 Complex conjugate
 Conjugate (square roots)
--->
-{% endcomment %}
+#}
 
 PEMDAS: Parentheses / Exponentiation / Multiplication and Division / Addition and Subtraction
 

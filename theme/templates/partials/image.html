@@ -1,4 +1,6 @@
+{# Called as: {% set img = {...} %}{% include "partials/image.html" %}
+   Expected keys: url, alt, description #}
 <figure class="image">
-    <img src="{{ include.url }}" alt="{{ include.alt }}" class="hover-highlight">
-    <figcaption>{{ include.description }}</figcaption>
+    <img src="{{ img.url }}" alt="{{ img.alt }}" class="hover-highlight">
+    <figcaption>{{ img.description }}</figcaption>
 </figure>

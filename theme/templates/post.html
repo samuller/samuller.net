@@ -1,14 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+{% set obj = article if article is defined else page %}
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  {% unless page.style contains 'no_title_heading' %}
+  {% if 'no_title_heading' not in (obj.style | default('')) %}
   <header class="post-header">
-    <h1 class="post-title no-print" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <h1 class="post-title no-print" itemprop="name headline">{{ obj.title }}</h1>
+    {% if obj.date is defined %}
+    <p class="post-meta">
+      <time datetime="{{ obj.date.isoformat() }}" itemprop="datePublished">
+        {{ obj.date.strftime('%b %-d, %Y') }}
+      </time>
+      {% if obj.author is defined %}
+       • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+           <span itemprop="name">{{ obj.author }}</span>
+         </span>
+      {% endif %}
+    </p>
+    {% endif %}
   </header>
-  {% endunless %}
+  {% endif %}
 
   <div class="post-content non-prose" itemprop="articleBody">
-    {{ content }}
+    {{ obj.content }}
   </div>
 
 </article>
@@ -24,3 +38,4 @@ MathJax.Hub.Config({
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
+{% endblock %}

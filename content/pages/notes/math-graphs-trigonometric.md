@@ -3,29 +3,29 @@ Template: post-grid
 Category: math
 Header: mathematics
 
-{% comment %}
-<!--
+{#
 period, asymptotes
 - Function: $\mathrm{sin}(x)$
 - Period: $2\pi$
 class="float-right"
 {: style="width: 32%"}
--->
-{% endcomment %}
+#}
 
-{% include image.html url="/img/math/sin(x).svg" alt="graph of sin(x).svg" description="Sine: $\mathrm{sin}(x)$" %}
-{% include image.html url="/img/math/cos(x).svg" alt="graph of cos(x).svg" description="Cosine: $\mathrm{cos}(x)$" %}
-{% include image.html url="/img/math/tan(x).svg" alt="graph of tan(x).svg" description="Tangent: $\mathrm{tan}(x)$" %}
-{% include image.html url="/img/math/sec(x).svg" alt="graph of tan(x).svg" description="Secant: $\mathrm{sec}(x)$" %}
-{% include image.html url="/img/math/cosec(x).svg" alt="graph of tan(x).svg" description="Cosecant: $\mathrm{cosec}(x)$" %}
-{% include image.html url="/img/math/cot(x).svg" alt="graph of tan(x).svg" description="Cotangent: $\mathrm{cot}(x)$" %}
+{% macro img(url, alt, description) %}{% set img = {'url': url, 'alt': alt, 'description': description} %}{% include "partials/image.html" %}{% endmacro %}
+
+{{ img("/img/math/sin(x).svg", "graph of sin(x).svg", "Sine: $\\mathrm{sin}(x)$") }}
+{{ img("/img/math/cos(x).svg", "graph of cos(x).svg", "Cosine: $\\mathrm{cos}(x)$") }}
+{{ img("/img/math/tan(x).svg", "graph of tan(x).svg", "Tangent: $\\mathrm{tan}(x)$") }}
+{{ img("/img/math/sec(x).svg", "graph of sec(x).svg", "Secant: $\\mathrm{sec}(x)$") }}
+{{ img("/img/math/cosec(x).svg", "graph of cosec(x).svg", "Cosecant: $\\mathrm{cosec}(x)$") }}
+{{ img("/img/math/cot(x).svg", "graph of cot(x).svg", "Cotangent: $\\mathrm{cot}(x)$") }}
 
 ## Hyperbolic functions
 {: style="grid-column: 1 / 4;"}
 
-{% include image.html url="/img/math/sinh(x).svg" alt="graph of sinh(x).svg" description="Hyperbolic sine: $\mathrm{sinh}(x)$" %}
-{% include image.html url="/img/math/cosh(x).svg" alt="graph of cosh(x).svg" description="Hyperbolic cosine: $\mathrm{cosh}(x)$" %}
-{% include image.html url="/img/math/tanh(x).svg" alt="graph of tanh(x).svg" description="Hyperbolic tangent: $\mathrm{tanh}(x)$" %}
-{% include image.html url="/img/math/arcsinh(x).svg" alt="graph of arcsinh(x).svg" description="Inverse hyperbolic sine: $\mathrm{arcsinh}(x)$" %}
-{% include image.html url="/img/math/arccosh(x).svg" alt="graph of arccosh(x).svg" description="Inverse hyperbolic cosine: $\mathrm{arccosh}(x)$" %}
-{% include image.html url="/img/math/arctanh(x).svg" alt="graph of arctanh(x).svg" description="Inverse hyperbolic tangent: $\mathrm{arctanh}(x)$" %}
+{{ img("/img/math/sinh(x).svg", "graph of sinh(x).svg", "Hyperbolic sine: $\\mathrm{sinh}(x)$") }}
+{{ img("/img/math/cosh(x).svg", "graph of cosh(x).svg", "Hyperbolic cosine: $\\mathrm{cosh}(x)$") }}
+{{ img("/img/math/tanh(x).svg", "graph of tanh(x).svg", "Hyperbolic tangent: $\\mathrm{tanh}(x)$") }}
+{{ img("/img/math/arcsinh(x).svg", "graph of arcsinh(x).svg", "Inverse hyperbolic sine: $\\mathrm{arcsinh}(x)$") }}
+{{ img("/img/math/arccosh(x).svg", "graph of arccosh(x).svg", "Inverse hyperbolic cosine: $\\mathrm{arccosh}(x)$") }}
+{{ img("/img/math/arctanh(x).svg", "graph of arctanh(x).svg", "Inverse hyperbolic tangent: $\\mathrm{arctanh}(x)$") }}

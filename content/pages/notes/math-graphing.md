@@ -3,14 +3,12 @@ Template: post
 Category: math
 Header: mathematics
 
-{% comment %}
-<!--
+{#
 Cartesian axes
 Functions
 
 Rotations require implicit graphs
--->
-{% endcomment %}
+#}
 
 ## Transformations
 

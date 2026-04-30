@@ -10,14 +10,10 @@ Style: no_nav no_title_heading ref_toggle
   }
 </style>
 
-{% comment %}
-"Contact" infraction: 17.6.1.3
-{% endcomment %}
+{# "Contact" infraction: 17.6.1.3
+#}
 <div class="no-print">
-{% include header-with-image-link.html text="WFDF Call Types"
-  img_src="/img/icon-file-pdf.svg" img_alt="pdf icon"
-  title="Download PDF"
-  link="/ultimate/ultimate-wfdf-calls.pdf" %}
+{% set hwil = {'text': 'WFDF Call Types', 'img_src': '/img/icon-file-pdf.svg', 'img_alt': 'pdf icon', 'title': 'Download PDF', 'link': '/ultimate/ultimate-wfdf-calls.pdf'} %}{% include "partials/header-with-image-link.html" %}
 </div>
 
 A quick summary of the common calls that can be made on the field when playing Ultimate frisbee according to the 2021 [WFDF rules](https://rules.wfdf.org/). Relevant rule numbers are stated in <span class="ref-link-desc">square brackets</span> and **bolded** words represent the exact word called on the field.
