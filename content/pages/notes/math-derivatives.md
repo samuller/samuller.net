@@ -47,9 +47,9 @@ $\displaystyle \frac{d}{dx}c\cdot x = c$
 
 $\displaystyle \frac{d}{dx}x^n = n\cdot x^{n-1}$
 
-$\displaystyle \frac{d}{dx}\ln x = \frac{1}{x} \qquad \\{x > 0\\}$
+$\displaystyle \frac{d}{dx}\ln x = \frac{1}{x} \qquad \{x > 0\}$
 
-$\displaystyle \frac{d}{dx}\ln \|x\| = \frac{1}{x} \qquad \\{x \neq 0\\}$
+$\displaystyle \frac{d}{dx}\ln |x| = \frac{1}{x} \qquad \{x \neq 0\}$
 
 $\displaystyle \frac{d}{dx}a^x = a^x\cdot \ln a$
 
@@ -77,9 +77,9 @@ $\displaystyle \frac{d}{dx}\arctan x = \frac{1}{1+x^2}$
 
 $\displaystyle \frac{d}{dx}\mathrm{arccot}\ x = \frac{-1}{1+x^2}$
 
-$\displaystyle \frac{d}{dx}\mathrm{arcsec}\ x = \frac{1}{\|x\|\sqrt{x^2-1}}$
+$\displaystyle \frac{d}{dx}\mathrm{arcsec}\ x = \frac{1}{|x|\sqrt{x^2-1}}$
 
-$\displaystyle \frac{d}{dx}\mathrm{arccosecant}\ x = \frac{-1}{\|x\|\sqrt{x^2-1}}$
+$\displaystyle \frac{d}{dx}\mathrm{arccosecant}\ x = \frac{-1}{|x|\sqrt{x^2-1}}$
 
 ## Implicit differentiation
 

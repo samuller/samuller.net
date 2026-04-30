@@ -47,7 +47,7 @@ Interpretation of constants:
 - $a$: width and direction in which parabola opens up
     - $a > 0$: opens upward
     - $a < 0$: opens downward
-    - smaller $\|a\|$ leads to wider parabola
+    - smaller $|a|$ leads to wider parabola
 - $a$ and $b$: determines $x$-position of vertex (turning point)
     - $a\times b > 0$: vertex at negative $x$
     - $a\times b < 0$: vertex at positive $x$
@@ -90,7 +90,7 @@ Equation:
 
 $$y = \left|f(x)\right|$$
 
-Example graph shows $y = \|x\|$.
+Example graph shows $y = |x|$.
 
 Properties:
 
@@ -110,8 +110,8 @@ $$y = a^x$$
 Interpretation of constants:
 
 - $a$: direction of growth
-    - $0 < \|a\| < 1$: grows as $x$ increases
-    - $1 \geq \|a\|$: shrinks as $x$ increases
+    - $0 < |a| < 1$: grows as $x$ increases
+    - $1 \geq |a|$: shrinks as $x$ increases
 
 Properties:
 
@@ -129,8 +129,8 @@ $$y = \log_ax$$
 Interpretation of constants:
 
 - $a$: direction of growth
-    - $0 < \|a\| < 1$: grows as $x$ increases
-    - $1 \geq \|a\|$: grows negative as $x$ increases
+    - $0 < |a| < 1$: grows as $x$ increases
+    - $1 \geq |a|$: grows negative as $x$ increases
 
 Properties:
 

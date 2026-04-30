@@ -3,13 +3,13 @@ Template: post
 Category: math
 Header: mathematics
 
-$0^n = 0 \qquad \\{n \neq 0\\}$
+$0^n = 0 \qquad \{n \neq 0\}$
 
-$a^0 = 1 \qquad \\{a \in \mathbb{R}\\}$
+$a^0 = 1 \qquad \{a \in \mathbb{R}\}$
 
-$a^m \times a^n = a^{m+n} \qquad \\{m, n \in \mathbb{Q}\\}$
+$a^m \times a^n = a^{m+n} \qquad \{m, n \in \mathbb{Q}\}$
 
-$a^m \div a^n = a^{m-n} \qquad \\{a \neq 0\\}$
+$a^m \div a^n = a^{m-n} \qquad \{a \neq 0\}$
 
 $(a^m)^n = a^{m \times n}$
 
@@ -27,15 +27,15 @@ $a^{-1} = \frac{1}{a}$
 
 $a^{-m} = \frac{1}{a^m}$
 
-If $a^m = a^n$ then $m = n \qquad \\{a \neq 0, a \neq \pm 1\\}$
+If $a^m = a^n$ then $m = n \qquad \{a \neq 0, a \neq \pm 1\}$
 
-If $a^m = b^m$ then $m = 0 \qquad \\{a \neq b\\}$
+If $a^m = b^m$ then $m = 0 \qquad \{a \neq b\}$
 
 # Logarithms
 
-If $a^n = b$ then $n = \log_a b \qquad \\{a>0, a\neq 1, b>0\\}$
+If $a^n = b$ then $n = \log_a b \qquad \{a>0, a\neq 1, b>0\}$
 
-Rather than remembering, you can derive the above from only two properties below. Start by applying $\log{x}$ to both sides of the equation $$a^n = b$$.
+Rather than remembering, you can derive the above from only two properties below. Start by applying $\log{x}$ to both sides of the equation $a^n = b$.
 
 $\log_a mn = log_a m + \log_a n$
 

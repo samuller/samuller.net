@@ -15,7 +15,7 @@ If $f$ is continuous on $[a,b]$, then $\int^b_af(x)dx = F(b) - F(a)$ where $F$ i
 
 $\displaystyle\int^b_af(x)\,dx = -\int^a_bf(x)\,dx$ 
 
-$\displaystyle\int^c_af(x)\,dx = \int^b_af(x)\,dx + \int^c_bf(x)\,dx \qquad \\{a \leq b \leq c\\}$
+$\displaystyle\int^c_af(x)\,dx = \int^b_af(x)\,dx + \int^c_bf(x)\,dx \qquad \{a \leq b \leq c\}$
 
 <!-- Ongelykheid/vergelyking reels -->
 
@@ -55,11 +55,11 @@ $\displaystyle\int f(g(x))\cdot g'(x)\,dx = \int f(u)\,du$ with $u = g(x)$
 
 $\displaystyle\int c\,dx = c\cdot x + k$
 
-$\displaystyle\int x^n\,dx = \frac{1}{n+1}x^{n+1} + k \qquad \\{n \neq -1\\}$
+$\displaystyle\int x^n\,dx = \frac{1}{n+1}x^{n+1} + k \qquad \{n \neq -1\}$
 
-$\displaystyle\int \frac{1}{x}\,dx = \ln\|x\| + k$
+$\displaystyle\int \frac{1}{x}\,dx = \ln|x| + k$
 
-$\displaystyle\int \ln\|x\|\,dx = \frac{1}{x} + k$
+$\displaystyle\int \ln|x|\,dx = \frac{1}{x} + k$
 
 $\displaystyle\int e^x\,dx = e^x + k$
 
@@ -71,13 +71,13 @@ $\displaystyle\int \sin x\,dx = -\cos x + k$
 
 $\displaystyle\int \cos x\,dx = \sin x + k$
 
-$\displaystyle\int \tan x\,dx = -\ln\|\cos x\| + k = \ln\|\sec x\| + k$
+$\displaystyle\int \tan x\,dx = -\ln|\cos x| + k = \ln|\sec x| + k$
 
-$\displaystyle\int \cot x\,dx = \ln\|\sin x\| + k$
+$\displaystyle\int \cot x\,dx = \ln|\sin x| + k$
 
-$\displaystyle\int \sec x\,dx = \ln\|\sec x+\tan x\| + k$
+$\displaystyle\int \sec x\,dx = \ln|\sec x+\tan x| + k$
 
-$\displaystyle\int \mathrm{cosec}\ x\,dx = \ln\|\mathrm{cosec}\ x-\cot x\| + k$
+$\displaystyle\int \mathrm{cosec}\ x\,dx = \ln|\mathrm{cosec}\ x-\cot x| + k$
 
 $\displaystyle\int \sec^2 x\,dx = \tan x + k$ if $\sec^2x$ exists over the interval
 

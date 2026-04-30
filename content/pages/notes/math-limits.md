@@ -31,9 +31,9 @@ $\displaystyle \lim_{x\to 0}\frac{\tan x}{x} = 1$
 
 $\displaystyle \lim_{x\to 0}\frac{x}{\tan x} = 1$
 
-$\displaystyle \lim_{x\to \infty}\frac{1}{x^r} = 0 \qquad \\{r > 0, r \in \mathbb{Q}\\}$
+$\displaystyle \lim_{x\to \infty}\frac{1}{x^r} = 0 \qquad \{r > 0, r \in \mathbb{Q}\}$
 
-$\displaystyle \lim_{x\to -\infty}\frac{1}{x^r} = 0 \qquad \\{r < 0, r \in \mathbb{Q}\\}$
+$\displaystyle \lim_{x\to -\infty}\frac{1}{x^r} = 0 \qquad \{r < 0, r \in \mathbb{Q}\}$
 
 $\displaystyle \lim_{x\to -\infty}x^r = \infty$ (i.e. limit doesn't exist)
 
@@ -47,7 +47,7 @@ $\displaystyle \lim_{x\to a}c\cdot f(x) = c \cdot \lim_{x\to a}f(x)$
 
 $\displaystyle \lim_{x\to a}f(x)\cdot g(x) = \lim_{x\to a}f(x) \cdot \lim_{x\to a}g(x)$
 
-$\displaystyle \lim_{x\to a}\frac{f(x)}{g(x)} = \frac{\displaystyle \lim_{x\to a}f(x)}{\displaystyle \lim_{x\to a}g(x)} \qquad \\{\lim g(x) \neq 0\\}$
+$\displaystyle \lim_{x\to a}\frac{f(x)}{g(x)} = \frac{\displaystyle \lim_{x\to a}f(x)}{\displaystyle \lim_{x\to a}g(x)} \qquad \{\lim g(x) \neq 0\}$
 
 $\displaystyle \lim_{x\to a}f(x)^n = (\lim_{x\to a}f(x))^n$
 

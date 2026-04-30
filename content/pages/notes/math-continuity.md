@@ -30,7 +30,7 @@ $c\cdot f$
 
 $f \cdot g$
 
-$\dfrac{f}{g} \qquad \\{g(a) \neq 0\\}$
+$\dfrac{f}{g} \qquad \{g(a) \neq 0\}$
 
 $f^\circ g$, i.e. $(f^\circ g)(x) = f(g(x))$
 

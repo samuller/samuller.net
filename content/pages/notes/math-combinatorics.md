@@ -7,7 +7,7 @@ Header: mathematics
 
 ### Definition
 
-$\displaystyle n! = \prod^n_{k=1}k = 1 \times 2 \times 3 \times 4 \times ...  \times (n-2) \times (n-1) \times n \qquad \\{n \in \mathbb{N}\\}$
+$\displaystyle n! = \prod^n_{k=1}k = 1 \times 2 \times 3 \times 4 \times ...  \times (n-2) \times (n-1) \times n \qquad \{n \in \mathbb{N}\}$
 
 $0! = 1$
 
@@ -23,7 +23,7 @@ $(n + 1)! = (n-1)n!$
 
 $\displaystyle \binom{n}{k}$ is the number of groups of size $k$ that can be formed out of a group of size $n$.
 
-Thus, for $0 \leq k \leq n$ where $\\{k,n \in \mathbb{N_0}\\}$ it is defined as
+Thus, for $0 \leq k \leq n$ where $\{k,n \in \mathbb{N_0}\}$ it is defined as
 
 $$\binom{n}{k} = \frac{n!}{k!(n - k)!} = \frac{n(n - 1)(n - 2)...(n - k))}{1 \cdot 2 \cdot 3 ... n}$$
 

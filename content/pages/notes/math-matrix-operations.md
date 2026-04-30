@@ -5,24 +5,10 @@ Header: mathematics
 
 ## Transponent
 
-If
-$$
-\mathbf{A} = \begin{bmatrix}
-a_{11} & a_{12} & \cdots & a_{1n}\\
-a_{21} & a_{22} & \cdots & a_{2n}\\
-\vdots & \vdots & \ddots & \vdots\\
-a_{m1} & a_{m2} & \ldots & a_{mn}\\
-\end{bmatrix}_{m\times n}
-$$
+If $\mathbf{A} = \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n}\\ a_{21} & a_{22} & \cdots & a_{2n}\\ \vdots & \vdots & \ddots & \vdots\\ a_{m1} & a_{m2} & \ldots & a_{mn}\\ \end{bmatrix}_{m\times n}$
 then
-$$
-\mathbf{A}^T = \begin{bmatrix}
-a_{11} & a_{21} & \cdots & a_{m1}\\
-a_{12} & a_{22} & \cdots & a_{m2}\\
-\vdots & \vdots & \ddots & \vdots\\
-a_{1n} & a_{2n} & \ldots & a_{mn}\\
-\end{bmatrix}_{m\times n}
-$$
+$\mathbf{A}^T = \begin{bmatrix} a_{11} & a_{21} & \cdots & a_{m1}\\ a_{12} & a_{22} & \cdots & a_{m2}\\ \vdots & \vdots & \ddots & \vdots\\
+a_{1n} & a_{2n} & \ldots & a_{mn}\\ \end{bmatrix}_{m\times n}$
 
 The transposed matrix $\mathbf{A}^T$ is a mirror image of $\mathbf{A}$ where the symmetry-axis is the main diagonal. Transposing is thus an operation where the columns of a matrix are swapped with its rows and has no effect on the values on the main diagonal.
 
@@ -57,48 +43,18 @@ Cofactors are generally necessary to calculate a few properties of matrices, but
 
 ## Determinant
 
-The determinant is a numerical value that can only be calculated for square matrices. The notation for the determinant is $\operatorname{det}\mathbf{A}$ or $\|\mathbf{A}\|$. The determinant has an order of $n$ if $\mathbf{A}$ has a dimension of $n\times n$. The determinant for lower orders as follows:
+The determinant is a numerical value that can only be calculated for square matrices. The notation for the determinant is $\operatorname{det}\mathbf{A}$ or $|\mathbf{A}|$. The determinant has an order of $n$ if $\mathbf{A}$ has a dimension of $n\times n$. The determinant for lower orders as follows:
 
-For $\mathbf{A}_{1\times1} = [a\_{11}]$ the $\operatorname{det}\mathbf{A} = \|a\_{11}\|=a\_{11}$
+For $\mathbf{A}_{1\times1} = [a_{11}]$ the $\operatorname{det}\mathbf{A} = |a_{11}|=a_{11}$
 
-For
-$$
-\mathbf{A}_{2\times2} =
-\begin{bmatrix}
-a_{11} & a_{12}\\
-a_{21} & a_{22}\\
-\end{bmatrix}
-$$ the
-$$
-\operatorname{det}\mathbf{A} = \begin{vmatrix}
-a_{11} & a_{12}\\
-a_{21} & a_{22}\\
-\end{vmatrix}= a_{11}\cdot a_{22}-a_{12}\cdot a_{21}
-$$
+For $\mathbf{A}_{2\times2} = \begin{bmatrix} a_{11} & a_{12}\\ a_{21} & a_{22}\\ \end{bmatrix}$ the
+$\operatorname{det}\mathbf{A} = \begin{vmatrix} a_{11} & a_{12}\\ a_{21} & a_{22}\\ \end{vmatrix}= a_{11}\cdot a_{22}-a_{12}\cdot a_{21}$
 
 For
-$$
-\mathbf{A}_{3\times3} =
-\begin{bmatrix}
-a_{11} & a_{12} & a_{13}\\
-a_{21} & a_{22} & a_{23}\\
-a_{31} & a_{32} & a_{33}\\
-\end{bmatrix}
-$$ the
-$$
-\operatorname{det}\mathbf{A} = \begin{vmatrix}
-a_{11} & a_{12} & a_{13}\\
-a_{21} & a_{22} & a_{23}\\
-a_{31} & a_{32} & a_{33}\\
-\end{vmatrix}
-$$
+$\mathbf{A}_{3\times3} = \begin{bmatrix} a_{11} & a_{12} & a_{13}\\ a_{21} & a_{22} & a_{23}\\ a_{31} & a_{32} & a_{33}\\ \end{bmatrix}$ the
+$\operatorname{det}\mathbf{A} = \begin{vmatrix} a_{11} & a_{12} & a_{13}\\ a_{21} & a_{22} & a_{23}\\ a_{31} & a_{32} & a_{33}\\ \end{vmatrix}$
 
-$$
-\begin{align}
-=&\quad\ (a_{11}\cdot a_{22}\cdot a_{33}) + (a_{12}\cdot a_{23}\cdot a_{31}) + (a_{13}\cdot a_{21}\cdot a_{32})\\
-& - (a_{11}\cdot a_{23}\cdot a_{32}) - (a_{12}\cdot a_{21}\cdot a_{33}) - (a_{13}\cdot a_{22}\cdot a_{31})
-\end{align}
-$$
+$$\begin{align} =&\quad\ (a_{11}\cdot a_{22}\cdot a_{33}) + (a_{12}\cdot a_{23}\cdot a_{31}) + (a_{13}\cdot a_{21}\cdot a_{32})\\ & - (a_{11}\cdot a_{23}\cdot a_{32}) - (a_{12}\cdot a_{21}\cdot a_{33}) - (a_{13}\cdot a_{22}\cdot a_{31}) \end{align} $$
 
 For higher orders the determinant has to be calculated through *cofactor expansion*, or by using the determinant rules and known determinants. Cofactor expansion requires calculating lower order determinants. With cofactor expansion the determinant of any matrix $\mathbf{A}_{n\times n}$ is just the cofactor expansion of any row $r$:
 

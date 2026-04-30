@@ -31,71 +31,27 @@ All the following matrices are square:
 
 **Zero matrix**: Whole matrix only contains zeros. Matrix is called $\mathbf{0}$.
 
-Example:
-$$
-\begin{bmatrix}
-0 & 0 & 0\\
-0 & 0 & 0\\
-0 & 0 & 0\\
-\end{bmatrix}
-$$
+Example: $\begin{bmatrix} 0 & 0 & 0\\ 0 & 0 & 0\\ 0 & 0 & 0\\ \end{bmatrix}$
 
 **Diagonal matrix**: Contains zeros, except on the main diagonal.
 
-Example:
-$$
-\begin{bmatrix}
-2 & 0 & 0\\
-0 & 8 & 0\\
-0 & 0 & 3\\
-\end{bmatrix}
-$$
+Example: $\begin{bmatrix} 2 & 0 & 0\\ 0 & 8 & 0\\ 0 & 0 & 3\\ \end{bmatrix}$
 
 **Identity matrix**: Is a diagonal matrix that only has ones on the main diagonal. Matrix is call $\mathbf{I}$.
 
-Example:
-$$
-\begin{bmatrix}
-1 & 0 & 0\\
-0 & 1 & 0\\
-0 & 0 & 1\\
-\end{bmatrix}
-$$
+Example: $\begin{bmatrix} 1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1\\ \end{bmatrix}$
 
 **Scalar matrix**: Is the product of a constant with the identity matrix.
 
-Example:
-$$
-\begin{bmatrix}
-5 & 0 & 0\\
-0 & 5 & 0\\
-0 & 0 & 5\\
-\end{bmatrix}
-$$
+Example: $\begin{bmatrix} 5 & 0 & 0\\ 0 & 5 & 0\\ 0 & 0 & 5\\ \end{bmatrix}$
 
 **Lower triangular matrix**: All values above the main diagonal are zero.
 
-Example:
-$$
-\begin{bmatrix}
-5 & 0 & 0 & 0\\
-1 & 3 & 0 & 0\\
-4 & 3 & 9 & 0\\
-8 & 2 & 7 & 6\\
-\end{bmatrix}
-$$
+Example: $\begin{bmatrix} 5 & 0 & 0 & 0\\ 1 & 3 & 0 & 0\\ 4 & 3 & 9 & 0\\ 8 & 2 & 7 & 6\\ \end{bmatrix}$
 
 **Upper triangular matrix**: All values below the main diagonal are zero
 
-Example:
-$$
-\begin{bmatrix}
-4 & 8 & 7 & 6\\
-0 & 9 & 2 & 3\\
-0 & 0 & 1 & 5\\
-0 & 0 & 0 & 3\\
-\end{bmatrix}
-$$
+Example: $\begin{bmatrix} 4 & 8 & 7 & 6\\ 0 & 9 & 2 & 3\\ 0 & 0 & 1 & 5\\ 0 & 0 & 0 & 3\\ \end{bmatrix}$
 
 **Triangular matrix**: Is either an upper or lower triangular matrix.
 
@@ -111,9 +67,9 @@ $$
 
 ## Rules
 
-With matrices $\mathbf{A}\_{m\times n}$ and $\mathbf{B}\_{m\times n}$ (i.e. same sizes) the following applies:
+With matrices $\mathbf{A}_{m\times n}$ and $\mathbf{B}_{m\times n}$ (i.e. same sizes) the following applies:
 
-$k\cdot \mathbf{A} = [k\cdot a_{ij}]_{m\times n} \qquad \\{k \in \mathbb{R}\\}$
+$k\cdot \mathbf{A} = [k\cdot a_{ij}]_{m\times n} \qquad \{k \in \mathbb{R}\}$
 
 $1\cdot\mathbf{A} = \mathbf{A}$
 
@@ -128,12 +84,12 @@ $k_1(\mathbf{A}+\mathbf{B}) = k_1\mathbf{A} + k_1\mathbf{B}$
 
 $(k_1+k_2)\mathbf{A} = k_1\mathbf{A} + k_1\mathbf{A}$
 
-Unlike scalar multiplication ($k\cdot \mathbf{A}$), matrix multiplication requires matrices with the same *inner dimension*, i.e. with $\mathbf{A}\_{m\times p}$ and $\mathbf{B}\_{p\times n}$ the following applies:
+Unlike scalar multiplication ($k\cdot \mathbf{A}$), matrix multiplication requires matrices with the same *inner dimension*, i.e. with $\mathbf{A}_{m\times p}$ and $\mathbf{B}_{p\times n}$ the following applies:
 
-$\displaystyle \mathbf{A}\cdot \mathbf{B} = \mathbf{C}\_{m\times n} = [c\_{rk}] = \sum^p\_{i=1}a\_{ri}b\_{ik}$
+$\displaystyle \mathbf{A}\cdot \mathbf{B} = \mathbf{C}_{m\times n} = [c_{rk}] = \sum^p_{i=1}a_{ri}b_{ik}$
 
 $\mathbf{A}\cdot\mathbf{B} \not\equiv \mathbf{B}\cdot\mathbf{A}$ (the order of the product is important - matrix multiplication is not *commutative*)
 
-With matrices $\mathbf{A}\_{n\times n}$, $\mathbf{B}\_{n\times n}$ and $\mathbf{X}_{n\times n}$ the following applies:
+With matrices $\mathbf{A}_{n\times n}$, $\mathbf{B}_{n\times n}$ and $\mathbf{X}_{n\times n}$ the following applies:
 
 If $\displaystyle \mathbf{A}\cdot \mathbf{X} = \mathbf{B}$ then $\displaystyle \mathbf{X} = \mathbf{A}^{-1}\cdot\mathbf{B}$
