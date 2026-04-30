@@ -1,7 +1,8 @@
----
-layout: page
-style: no_nav
----
+Title: Ultimate
+Save_as: ultimate/index.html
+Url: ultimate/
+Template: page
+Style: no_nav
 
 # Ultimate
 

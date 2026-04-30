@@ -1,6 +1,3 @@
----
----
-
 function isVueLoaded() {
     try {
         new Vue();

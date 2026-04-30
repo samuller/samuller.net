@@ -1,12 +1,8 @@
----
-layout: post
-title:  "Terminology"
-categories: math
-header: mathematics
----
+Title: Terminology
+Template: post
+Category: math
+Header: mathematics
 
-{% comment %}
-<!--
 Rational
 $\frac{a}{b}$ where $\\{ a,b \in \mathbb{Z}, b \neq 0 \\}$
 Complex conjugate

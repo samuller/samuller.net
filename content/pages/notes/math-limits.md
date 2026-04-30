@@ -1,9 +1,7 @@
----
-layout: post
-title:  "Limits"
-categories: math
-header: mathematics
----
+Title: Limits
+Template: post
+Category: math
+Header: mathematics
 
 ## Definition
 

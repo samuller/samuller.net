@@ -1,6 +1,3 @@
----
----
-
 /**
  * Iterate between possible themes.
  */

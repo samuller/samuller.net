@@ -1,9 +1,7 @@
----
-layout: post
-title:  "Partial derivatives"
-categories: math
-header: mathematics
----
+Title: Partial derivatives
+Template: post
+Category: math
+Header: mathematics
 
 ## Chain rule
 

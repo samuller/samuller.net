@@ -1,9 +1,7 @@
----
-layout: post
-title:  "Common function graphs"
-categories: math
-header: mathematics
----
+Title: Common function graphs
+Template: post
+Category: math
+Header: mathematics
 
 These graphs are all specified as functions on the cartesian coordinate system. Since functions only have one output value for each input, these cases exclude implicit functions or more canonical forms.
 

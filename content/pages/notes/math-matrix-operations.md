@@ -1,9 +1,7 @@
----
-layout: post
-title:  "Matrix operations"
-categories: math
-header: mathematics
----
+Title: Matrix operations
+Template: post
+Category: math
+Header: mathematics
 
 ## Transponent
 

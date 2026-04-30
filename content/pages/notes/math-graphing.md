@@ -1,9 +1,7 @@
----
-layout: post
-title:  "Cartesian graphing"
-categories: math
-header: mathematics
----
+Title: Cartesian graphing
+Template: post
+Category: math
+Header: mathematics
 
 {% comment %}
 <!--

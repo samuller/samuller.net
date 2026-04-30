@@ -1,9 +1,7 @@
----
-layout: post
-title:  "Summation"
-categories: math
-header: mathematics
----
+Title: Summation
+Template: post
+Category: math
+Header: mathematics
 
 ## General rules
 

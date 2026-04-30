@@ -1,9 +1,7 @@
----
-layout: post
-title:  "Continuity"
-categories: math
-header: mathematics
----
+Title: Continuity
+Template: post
+Category: math
+Header: mathematics
 
 ## Definition
 

@@ -1,6 +1,8 @@
----
-layout: page
----
+Title:
+Slug: notes
+Save_as: notes/index.html
+Url: notes/
+Template: page
 
 {% comment %}
 <!--

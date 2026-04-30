@@ -1,9 +1,7 @@
----
-layout: post
-title:  "Exponents and roots"
-categories: math
-header: mathematics
----
+Title: Exponents and roots
+Template: post
+Category: math
+Header: mathematics
 
 $0^n = 0 \qquad \\{n \neq 0\\}$
 

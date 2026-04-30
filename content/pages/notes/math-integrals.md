@@ -1,9 +1,7 @@
----
-layout: post
-title:  "Integrals"
-categories: math
-header: mathematics
----
+Title: Integrals
+Template: post
+Category: math
+Header: mathematics
 
 ## Fundamental theorem
 

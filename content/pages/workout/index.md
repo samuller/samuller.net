@@ -1,9 +1,9 @@
----
-layout: page
-title: Workout
-header: Workout
-style: no_nav
----
+Title: Workout
+Save_as: workout/index.html
+Url: workout/
+Template: page
+Header: Workout
+Style: no_nav
 
 # Athlean-X™ "Perfect Home Workout"
 

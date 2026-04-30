@@ -1,9 +1,7 @@
----
-layout: post
-title:  "Derivatives"
-categories: math
-header: mathematics
----
+Title: Derivatives
+Template: post
+Category: math
+Header: mathematics
 
 ## Notation
 

@@ -1,9 +1,7 @@
----
-layout: post
-title:  "Matrices"
-categories: math
-header: mathematics
----
+Title: Matrices
+Template: post
+Category: math
+Header: mathematics
 
 A matrix is a two dimensional series of numbers:
 

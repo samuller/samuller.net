@@ -1,9 +1,7 @@
----
-layout: post
-title:  "Factorisation"
-categories: math
-header: mathematics
----
+Title: Factorisation
+Template: post
+Category: math
+Header: mathematics
 
 ## Terminology
 

@@ -1,9 +1,7 @@
----
-layout: post-grid
-title:  "Trigonometric graphs"
-categories: math
-header: mathematics
----
+Title: Trigonometric graphs
+Template: post-grid
+Category: math
+Header: mathematics
 
 {% comment %}
 <!--

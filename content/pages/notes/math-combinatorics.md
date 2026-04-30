@@ -1,9 +1,7 @@
----
-layout: post
-title:  "Combinatorics"
-categories: math
-header: mathematics
----
+Title: Combinatorics
+Template: post
+Category: math
+Header: mathematics
 
 ## Factorial
 

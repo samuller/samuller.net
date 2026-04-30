@@ -1,10 +1,8 @@
----
-layout: post
-title:  "WFDF Call Sequence"
-categories: ultimate sport
-header: Ultimate
-style: no_nav no_title_heading ref_toggle
----
+Title: WFDF Call Sequence
+Template: post
+Category: ultimate sport
+Header: Ultimate
+Style: no_nav no_title_heading ref_toggle
 
 <style type="text/css">
   strong {
