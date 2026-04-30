@@ -25,12 +25,12 @@ Infractions are calls that do not stop play<span class="ref-link"> [15.2,18.2.6]
 There are only two 'types' of infraction<span class="ref-link"> [15.2]</span>:
 - **Travel**<span class="ref-link"> [18.2]</span>: whenever the person catching the disc does not stop as fast as possible, or they change direction after properly catching<span class="ref-link"> [18.2.5.1]</span>, or they establish a pivot point at an invalid position (e.g. out of bounds)<span class="ref-link"> [18.2.5.3]</span> - one exception where they can maintain speed is if they release the disc before taking three steps<span class="ref-link"> [18.2.2.1.2]</span>
 - Marking infractions<span class="ref-link"> [18.1]</span>, of which there are 6 types, are usually due to some action of the defending *marker* against the *thrower*:
-  - **Fast count**: counting faster than 1 second intervals or making any other counting mistake (starting count, ordering, etc.)<span class="ref-link"> [18.1.1.1]</span>
-  - **Straddle**: a line between the defender's feet are closer than one disc diameter from the thrower's pivot point<span class="ref-link"> [18.1.1.2]</span>
-  - **Disc space**: a mark being too close to the thrower, i.e. less than one disc diameter from the thrower's torso<span class="ref-link"> [18.1.1.3]</span>
-  - **Wrapping**: a line between the defender's hands are closer than one disc diameter from the thrower's torso<span class="ref-link"> [18.1.1.4]</span>
-  - **Double team**: more than one defender within 3 meters - unless they're marking another offensive player within 3m, or are just running across this area<span class="ref-link"> [18.1.1.5]</span>
-  - **Vision**: a defensive player uses any part of their body to intentionally obstruct the thrower's vision<span class="ref-link"> [18.1.1.6]</span>
+    - **Fast count**: counting faster than 1 second intervals or making any other counting mistake (starting count, ordering, etc.)<span class="ref-link"> [18.1.1.1]</span>
+    - **Straddle**: a line between the defender's feet are closer than one disc diameter from the thrower's pivot point<span class="ref-link"> [18.1.1.2]</span>
+    - **Disc space**: a mark being too close to the thrower, i.e. less than one disc diameter from the thrower's torso<span class="ref-link"> [18.1.1.3]</span>
+    - **Wrapping**: a line between the defender's hands are closer than one disc diameter from the thrower's torso<span class="ref-link"> [18.1.1.4]</span>
+    - **Double team**: more than one defender within 3 meters - unless they're marking another offensive player within 3m, or are just running across this area<span class="ref-link"> [18.1.1.5]</span>
+    - **Vision**: a defensive player uses any part of their body to intentionally obstruct the thrower's vision<span class="ref-link"> [18.1.1.6]</span>
 
 ## Violations
 
@@ -49,10 +49,10 @@ A **foul** is a type of violation caused by a breach of the rules due to dangero
 
 - **Strip**<span class="ref-link"> [17.3]</span>: a foul that causes the thrower to drop a disc they properly caught
 - There are mutiple types of foul, but they usually all use the same call-out ("**Foul**"):
-  - Dangerous play, Receiving, Strip, Blocking, Force-out, Defensive throwing (Marking), Offensive throwing (Thrower), Indirect and Offsetting fouls
-  - The different types affect how the result is resolved<span class="ref-link"> [17.1-17.9]</span>
-  - If the fouled team retains or gains possession of the disc, they can continue without stoppage after a foul call, *if* the player that called the foul then calls "**Play on**" as soon as possible<span class="ref-link"> [16.2.4.1]</span>
-  - If *both* the *event* and the *call* did not affect play, then it can be ignored<span class="ref-link"> [16.3]</span>
+    - Dangerous play, Receiving, Strip, Blocking, Force-out, Defensive throwing (Marking), Offensive throwing (Thrower), Indirect and Offsetting fouls
+    - The different types affect how the result is resolved<span class="ref-link"> [17.1-17.9]</span>
+    - If the fouled team retains or gains possession of the disc, they can continue without stoppage after a foul call, *if* the player that called the foul then calls "**Play on**" as soon as possible<span class="ref-link"> [16.2.4.1]</span>
+    - If *both* the *event* and the *call* did not affect play, then it can be ignored<span class="ref-link"> [16.3]</span>
 
 ### Minor contact
 
