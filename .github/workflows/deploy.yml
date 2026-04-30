@@ -1,0 +1,46 @@
+name: Deploy to GitHub Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  # for actions/checkout
+  contents: read
+  # for actions/deploy-pages to publish
+  pages: write
+  # for OIDC authentication used by actions/deploy-pages
+  id-token: write
+
+# Prevent concurrent deployments without cancelling an in-progress run
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: ghcr.io/astral-sh/uv:python3.14-bookworm
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Python dependencies
+        run: uv sync
+
+      - name: Build site
+        run: bash run.sh publish
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./output
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
