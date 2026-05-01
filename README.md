@@ -1,22 +1,13 @@
 ## Install
 
-Install Ruby 2.5+:
+Install Astral UV or work in devcontainer. Then build site to `output/` with:
 
-    sudo apt-get install ruby ruby-dev
-    ruby -v
-
-Install bundler:
-
-    sudo gem install bundler
-
-Install required packages:
-
-    bundle install
+```shell
+./run.sh clean && ./run.sh htm
+```
 
 ## Serve
 
-    bundle exec jekyll serve
-
-## Update
-
-    bundle update
+```shell
+./run.sh serve
+```
