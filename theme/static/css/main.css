@@ -79,7 +79,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 400 16px/1.5 "Helvetica Neue", Arial, sans-serif;
   color: rgb(var(--text-color-rgb));
   border-top: 4px solid #000;
   background: var(--background-image);
