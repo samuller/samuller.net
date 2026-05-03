@@ -26,9 +26,12 @@ function processURL(url) {
     return {quoteIdx: quoteIdx, category: category};
 }
 
-var quoteData = {{ quotes_data | tojson }};
-var categories = Object.keys(quoteData);
-var data = processURL(new URL(location.href));
+var quoteData;
+var categories;
+fetch('/quotes/quotes.json').then(function(r) { return r.json() }).then(function(d) {
+    quoteData = d;
+    categories = Object.keys(quoteData);
+    var data = processURL(new URL(location.href));
 
 if (isVueLoaded()) {
     // delete filler div
@@ -101,3 +104,4 @@ window.onpopstate = function(event) {
         app.category = event.state.category;
     }
 };
+});

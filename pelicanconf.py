@@ -58,7 +58,7 @@ EXTRA_PATH_METADATA = {
 # quotes_data (loaded below) is available when they render.
 TEMPLATE_PAGES = {
     'quotes/index.html':  'quotes/index.html',
-    'js/quote.js':        'js/quote.js',
+    'quotes/quotes.json': 'quotes/quotes.json',
     'workout/a.html':     'workout/a.html',
     'workout/b.html':     'workout/b.html',
 }
@@ -73,7 +73,7 @@ SITEMAP = {
 GOOGLE_ANALYTICS = 'UA-120258429-1'
 
 # Load quote TSV files at config time so they're available as quotes_data
-# in every Jinja2 template (including the TEMPLATE_PAGES quote.js).
+# in every Jinja2 template (including the TEMPLATE_PAGES quotes.json).
 def _load_quotes():
     data_dir = os.path.join(os.path.dirname(__file__), '_data', 'quotes')
     quotes = {}
