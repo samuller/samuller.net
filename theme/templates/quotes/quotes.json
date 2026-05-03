@@ -1,1 +1,1 @@
-{{ quotes_data | tojson }}
+{{ quotes_data | tojsonb64xor }}

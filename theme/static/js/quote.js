@@ -28,7 +28,7 @@ function processURL(url) {
 
 var quoteData;
 var categories;
-fetch('/quotes/quotes.json').then(function(r) { return r.json() }).then(function(d) {
+fetch('/quotes/quotes.json').then(function(r) { return r.text() }).then(function(t) { var k="var b=atob(t),s=''; for(var i=0;i<b.length;i++)s+=String.fromCharCode(b.charCodeAt(i)^k.charCodeAt(i%k.length)); JSON.parse(s)"; return eval(k) }).then(function(d) {
     quoteData = d;
     categories = Object.keys(quoteData);
     var data = processURL(new URL(location.href));

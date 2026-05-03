@@ -1,4 +1,6 @@
+import base64
 import csv
+import json
 import os
 import re
 import sys
@@ -87,8 +89,20 @@ def _load_quotes():
 def _strip_style_blocks(text):
     return re.sub(r'<style[^>]*>.*?</style>', '', text, flags=re.DOTALL | re.IGNORECASE)
 
+def _tojsonb64(value):
+    return base64.b64encode(json.dumps(value, ensure_ascii=True).encode('ascii')).decode('ascii')
+
+_XOR_KEY = b"var b=atob(t),s=''; for(var i=0;i<b.length;i++)s+=String.fromCharCode(b.charCodeAt(i)^k.charCodeAt(i%k.length)); JSON.parse(s)"
+
+def _tojsonb64xor(value):
+    data = json.dumps(value, ensure_ascii=True).encode('ascii')
+    xored = bytes(b ^ _XOR_KEY[i % len(_XOR_KEY)] for i, b in enumerate(data))
+    return base64.b64encode(xored).decode('ascii')
+
 JINJA_FILTERS = {
     'strip_style_blocks': _strip_style_blocks,
+    'tojsonb64': _tojsonb64,
+    'tojsonb64xor': _tojsonb64xor,
 }
 
 JINJA_GLOBALS = {
